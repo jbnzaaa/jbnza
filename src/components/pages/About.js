@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/style.css'
 import { Container, Box, Typography, List, ListItem } from '@mui/material'
 
 function About() {
@@ -8,13 +7,13 @@ function About() {
       <Container
         sx={{
           display: 'flex',
-          alignItems: 'center',
           paddingY: 15
         }}
       >
         <Box>
           <img 
             src='https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80'
+            alt='Profile'
             style={{
               width: '360px',
               marginRight: '40px'

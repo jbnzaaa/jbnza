@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --light: #FCFCFC;
+  --black: #0F0E17;
+  --dark-black: #010104;
+  --orange: #FF8906;
+  --red: #F25F4C;
+}
+
+body{
+  background: var(--light);
+
+  #outline_logo{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 1010px;
+    left: -1000px;
+    z-index: -1;
+    width: 2800px;
+    opacity: .05;
+  }
+
+  .sample{
+    border-color: #F25F4C;
+  }
+
+  // Nav 
+  nav{
+    width:85%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+      #logo{
+        width: 50px;
+      }
+    }
+
+    #page_links{
+      ul{
+        list-style: none;
+        display: flex;
+    
+        li{
+          margin: 0 18px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    #social_links{
+      ul{
+        list-style: none;
+        display: flex;
+    
+        li{
+          margin: 0 3px;
+          
+        }
+      }
+    }
+  }
+
+  // Hero Section
+  .hero_section{
+    width:85%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    div{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      span{
+        font-size: 14px;
+      }
+  
+      h1{
+        font-size: 50px;
+  
+        span{
+          font-size: 50px;
+          color: var(--orange);
+        }
+      }
+  
+      p{
+        text-align: right;
+        font-size: 14px;
+        width: 550px;
+        margin-bottom: 20px;
+      }
+
+      button{
+        background: var(--black);
+        border: none;
+        padding: 10px 14px;
+        color: var(--light);
+        width: 190px;
+      }
+    }
+  }
+
+  // About
+  .about{
+    width: 85%;
+    margin: auto;
+    padding: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+    
+    div{
+      width: 90%;
+      margin: auto;
+      display: flex;
+
+      #a{
+        width: auto;
+        // position: absolute;
+
+        img{
+          width: 350px;
+          display: block;
+        }
+      }
+  
+      #b{
+        width: 900px;
+        // position: absolute;
+        // z-index: -1;
+        // left: 440px;
+
+        #about_me{
+          display: flex;
+          flex-direction: column;
+          // padding: 40px 40px 40px 120px;
+          padding: 50px;
+  
+          h4{
+            font-size: 40px;
+            margin-bottom: 10px;
+          }
+  
+          p{
+            font-size: 14px;
+            margin-bottom: 8px;
+          }
+        }
+  
+        #what_i_use{
+          display: flex;
+          flex-direction: column;
+          // padding: 40px 40px 40px 120px;
+          padding: 50px;
+          background: var(--black);
+  
+          h5, p{
+            font-size: 14px;
+            color: var(--light);
+            margin-bottom: 10px;
+          }
+  
+          .stack{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            section{
+              display: flex;
+              flex-direction: column;
+              margin: 10px 0;
+              color: var(--light);
+  
+              h5{
+                font-weight: 400;
+              }
+    
+              ul{
+                list-style: none;
+                display: flex;
+    
+                li{
+                  font-size: 13px;
+                  margin: 0 15px 0 0;
+                  color: var(--red);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .project{
+    width: 85%;
+    margin: auto;
+    padding: 100px 0 0 0;
+
+    div{
+      #my_project{
+        margin-bottom: 50px;
+
+        h4{
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+    
+        p{
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      }
+
+      .card{
+        background: #f2f2f2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: end;
+
+        img{
+          background: red;
+        }
+
+        section{
+          padding: 30px 50px;
+
+          span{
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--orange);
+          }
+
+          h2{
+            font-size: 25px;
+          }
+
+          p{
+            font-size: 14px;
+          }
+
+          ul{
+            list-style: none;
+            display: flex;
+            width: 80%;
+            background: red;
+
+            li{
+              font-size: 13px;
+              margin: 0  0 0 15px;
+            }
+          }
+
+          .link{
+            background: red;
+          }
+        }
+      }
+    }
+  }
+}

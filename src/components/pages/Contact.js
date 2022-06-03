@@ -46,7 +46,8 @@ function Contact() {
               color: '#FCFCFC',
               display: 'flex',
               flexWrap: 'wrap',
-              width: '50%'
+              width: '50%',
+              lineHeight: 2
             }}
           >
             If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality. 

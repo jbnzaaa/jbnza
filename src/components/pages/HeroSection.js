@@ -1,8 +1,7 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Container, Typography, Button } from '@mui/material'
-import { BsArrowRight } from 'react-icons/bs'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
 function HeroSection() {
   return (
@@ -36,7 +35,7 @@ function HeroSection() {
             variant='h1' 
             sx={{ 
               fontWeight: 'bold', 
-              fontSize: 50, 
+              fontSize: 55, 
               fontFamily: 'Poppins' 
             }}
           >
@@ -60,7 +59,8 @@ function HeroSection() {
               fontFamily: 'Poppins',
               width: '50%',
               textAlign: 'right',
-              mt: 2
+              mt: 2,
+              lineHeight: 2
             }}
           >
             I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.
@@ -78,30 +78,17 @@ function HeroSection() {
               height: '50px',
               borderRadius: 0
             }}
-            disableRipple
           >
             view more
-            <BsArrowRight
-              style={{
+            <FontAwesomeIcon 
+              icon={faArrowRightLong} 
+              style={{ 
                 marginLeft: 14
               }}
             />
           </Button>
         </Container>
       </Container>
-
-      {/* <section className='hero_section'>
-        <div>
-          <span>Hi, my name is</span>
-          <h1>Jayson Beniza</h1>
-          <h1><span>I do web design & development.</span></h1>
-          <p>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</p>
-          <button>
-            Download CV
-            <FontAwesomeIcon icon={ faLongArrowRight } size='lg' style={{ marginLeft: '10px' }}/>
-          </button>
-        </div>
-      </section> */}
     </>
   )
 }

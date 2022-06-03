@@ -15,7 +15,7 @@ function About() {
             src='https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80'
             alt='Profile'
             style={{
-              width: '360px',
+              width: '370px',
               marginRight: '40px'
             }}
           />
@@ -37,15 +37,41 @@ function About() {
             >
               About Me.
             </Typography>
-            <Typography
-              variant='paragraph'
-              sx={{
-                fontSize: 14,
-                fontFamily: 'Poppins'
-              }}
-            >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpa consectetur pariatur quis. Delectus sapiente ab aliquid quaerat consectetur, minus nostrum! Nihil, veniam. <br/> Architecto neque quaerat unde repudiandae ipsum dicta error ut dolorum, consequuntur perferendis laudantium autem quae similique ducimus necessitatibus recusandae nesciunt cumque beatae illum? Sequi, dolorem dolor reiciendis quaerat sapiente quisquam dignissimos corporis fugit eum saepe consequatur aliquid?
-            </Typography>
+            <List>
+              <ListItem
+                sx={{
+                  p: 0,
+                  mb: 2
+                }}
+              >
+                <Typography
+                  variant='paragraph'
+                  sx={{
+                    fontSize: 14,
+                    fontFamily: 'Poppins',
+                    lineHeight: 2,
+                  }}
+                >
+                  Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                </Typography>
+              </ListItem>
+              <ListItem
+                sx={{
+                  p: 0
+                }}
+              >
+                <Typography
+                  variant='paragraph'
+                  sx={{
+                    fontSize: 14,
+                    fontFamily: 'Poppins',
+                    lineHeight: 2,
+                  }}
+                >
+                  My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
+                </Typography>
+              </ListItem>
+            </List>
           </Box>
           <Box
             sx={{
@@ -68,9 +94,10 @@ function About() {
               sx={{
                 fontSize: 14,
                 fontFamily: 'Poppins',
+                lineHeight: 2
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpe ipsum dicta error ut dolorum ducimus illum? Sequi, dolorem dolor reiciendis quaerat sapiente quisquam dignissimos corporis fugit eum saepe consequatur aliquid?
+              I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
             </Typography>
             <List
               sx={{
@@ -149,7 +176,9 @@ function About() {
               </Typography>
               <Box
                 sx={{
-                  display: 'flex'
+                  display: 'flex',
+                  width: '100%',
+                  flexWrap: 'wrap'
                 }}
               >
                 <ListItem 
@@ -159,7 +188,7 @@ function About() {
                     width: 'auto',
                   }}
                 >
-                  HTML5
+                  HTML 5
                 </ListItem>
                 <ListItem 
                   sx={{
@@ -168,7 +197,7 @@ function About() {
                     width: 'auto',
                   }}
                 >
-                  CSS3
+                  CSS 3
                 </ListItem>
                 <ListItem 
                   sx={{
@@ -186,7 +215,34 @@ function About() {
                     width: 'auto',
                   }}
                 >
+                  Bootstrap
+                </ListItem>
+                <ListItem 
+                  sx={{
+                    fontSize: 13,
+                    color: '#F25F4C',
+                    width: 'auto',
+                  }}
+                >
                   JavaScript
+                </ListItem>
+                <ListItem 
+                  sx={{
+                    fontSize: 13,
+                    color: '#F25F4C',
+                    width: 'auto',
+                  }}
+                >
+                  JQuery
+                </ListItem>
+                <ListItem 
+                  sx={{
+                    fontSize: 13,
+                    color: '#F25F4C',
+                    width: 'auto',
+                  }}
+                >
+                  ReactJS
                 </ListItem>
                 <ListItem 
                   sx={{
@@ -215,53 +271,20 @@ function About() {
                 >
                   NodeJS
                 </ListItem>
+                <ListItem 
+                  sx={{
+                    fontSize: 13,
+                    color: '#F25F4C',
+                    width: 'auto',
+                  }}
+                >
+                  NPM
+                </ListItem>
               </Box>
             </List>
           </Box>
         </Box>
       </Container>
-
-      {/* <section className='about'>
-        <div>
-          <section id="a">
-            <img src='https://images.unsplash.com/photo-1624561172888-ac93c696e10c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1889'/>
-          </section>
-          <section id="b">
-            <div id='about_me'>
-              <h4>About Me.</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpa consectetur pariatur quis. Delectus sapiente ab aliquid quaerat consectetur, minus nostrum! Nihil, veniam.</p>
-              <p>Architecto neque quaerat unde repudiandae ipsum dicta error ut dolorum, consequuntur perferendis laudantium autem quae similique ducimus necessitatibus recusandae nesciunt cumque beatae illum? Sequi, dolorem dolor reiciendis quaerat sapiente quisquam dignissimos corporis fugit eum saepe consequatur aliquid?</p>
-            </div>
-            <div id='what_i_use'>
-              <h5>What I use?</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpa consectetur pariatur quis. Delectus sapiente ab aliquid quaerat consectetur, minus nostrum! Nihil, veniam. Architecto neque quaerat unde repudiandae ipsum dicta error ut dolorum, consequuntur perferendis laudantium autem quae similique.</p>
-              <div className='stack'>
-                <section>
-                  <h5>Creative Design</h5>
-                  <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Xd</li>
-                    <li>Figma</li>
-                  </ul>
-                </section>
-                <section>
-                  <h5>Web Development</h5>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>SASS</li>
-                    <li>JavaSCript</li>
-                    <li>Bootstrap</li>
-                    <li>MySQL</li>
-                    <li>Firebase</li>
-                  </ul>
-                </section>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section> */}
     </>
   )
 }

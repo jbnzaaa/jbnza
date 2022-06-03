@@ -1,8 +1,7 @@
 import React from 'react'
 import { ReactComponent as Logo } from '../img/jbnza_initial_logo.svg'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGithubSquare, faBehanceSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { RiGithubLine, RiBehanceFill, RiLinkedinFill } from 'react-icons/ri'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { Container, AppBar, Link, List } from '@mui/material';
  
 
@@ -77,29 +76,31 @@ function Nav() {
             }}
           >
             <Link 
-              href='https://www.behance.net/jbnza' 
-              sx={{ 
-                mx: 1
-              }}
-            >
-              <RiBehanceFill
-                style={{ 
-                  color: '#0F0E17', 
-                  fontSize: 23,
-                  display: 'flex',
-                }}
-              />
-            </Link>
-            <Link 
               href='https://github.com/jbnzaaa' 
               sx={{ 
                 mx: 1
               }}
             >
-              <RiGithubLine
+              <FontAwesomeIcon 
+                icon={faGithub} 
                 style={{ 
                   color: '#0F0E17', 
-                  fontSize: 23,
+                  fontSize: '1.3em',
+                  display: 'flex',
+                }}
+              />
+            </Link>
+            <Link 
+              href='https://www.behance.net/jbnza' 
+              sx={{ 
+                mx: 1
+              }}
+            >
+              <FontAwesomeIcon 
+                icon={faBehance} 
+                style={{ 
+                  color: '#0F0E17', 
+                  fontSize: '1.3em',
                   display: 'flex',
                 }}
               />
@@ -110,10 +111,11 @@ function Nav() {
                 mx: 1
               }}
             >
-              <RiLinkedinFill
+              <FontAwesomeIcon 
+                icon={faLinkedinIn} 
                 style={{ 
                   color: '#0F0E17', 
-                  fontSize: 23,
+                  fontSize: '1.3em',
                   display: 'flex',
                 }}
               />
@@ -121,40 +123,6 @@ function Nav() {
           </List>
         </Container>
       </AppBar>
-
-      {/* <nav>
-        <div>
-          <Link to='/'>
-            <Logo id='logo'/>
-          </Link>
-        </div>
-        <div id='page_links'>
-          <ul>
-            <li>
-              <Link to='/about' style={{ textDecoration: 'none', color: '#0F0E17' }}>About</Link>
-            </li>
-            <li>
-              <Link to='/projects' style={{ textDecoration: 'none', color: '#0F0E17' }}>Projects</Link>
-            </li>
-            <li>
-              <Link to='/contact' style={{ textDecoration: 'none', color: '#0F0E17' }}>Contact</Link>
-            </li>
-          </ul>
-        </div>
-        <div id='social_links'>
-          <ul>
-            <li>
-              <FontAwesomeIcon icon={ faGithubSquare } size='2x' style={{ color: '#0F0E17' }}/>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={ faBehanceSquare } size='2x' style={{ color: '#0F0E17' }}/>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={ faLinkedin } size='2x' style={{ color: '#0F0E17' }}/>
-            </li>
-          </ul>
-        </div>
-      </nav> */}
     </>
   )
 }

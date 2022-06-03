@@ -2,352 +2,162 @@ import React from 'react'
 import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListItem, Link, Button } from '@mui/material'
 
 function Project() {
+
+  const container = {
+    paddingY: 15
+  }
+
+  const typographyH4 = {
+    fontSize: 35,
+    fontFamily: 'Poppins',
+    fontWeight: 700,
+    mb: 2
+  }
+
+  const paragraphA = {
+    fontSize: 14,
+    fontFamily: 'Poppins'
+  }
+
+  const paragraphB = {
+    fontSize: 12, 
+    fontFamily: 'Poppins ', 
+    pb: 1/5, 
+    color: '#FF8906', 
+    textTransform: 'uppercase' 
+  }
+
+  const TypographyC = {
+    fontSize: 14, 
+    fontFamily: 'Poppins', 
+    width: '80%', 
+    flexWrap: 'wrap', 
+    pb: 3,
+    lineHeight: 2
+  }
+
+  const boxA = {
+    pt: 8
+  }
+
+  const boxB = {
+    display: 'flex' 
+  }
+
+  const cardA = {
+    display: 'flex',
+    width: '100%',
+    margin: 'auto',
+    background: 'transparent',
+    boxShadow: 0,
+    borderRadius: 0,
+    mb: 7
+  }
+
+  const cardB = {
+    display: 'flex',
+    width: '100%',
+    margin: 'auto',
+    background: 'transparent',
+    boxShadow: 0,
+    borderRadius: 0,
+    mb: 7
+  }
+
+  const cardContentA = {
+    width: '100%',
+    display: 'flex', 
+    flexDirection: 'column', 
+    justifyContent: 'center', 
+    p: 0, 
+    pl: 8 
+  }
+
+  const cardContentB = {
+    width: '100%', 
+    display: 'flex', 
+    flexDirection: 'column', 
+    justifyContent: 'center', 
+    p: 0, 
+    pr: 8 
+  }
+
+  const cardMedia = {
+    width: '35%'
+  }
+
+  const stackList = {
+    display: 'flex', 
+    width: '70%',  
+    fontSize: 13, 
+    fontFamily: 'Poppins', 
+    p: 0, 
+    flexWrap: 'wrap', 
+    pb: 3, color: '#F25F4C' ,
+    lineHeight: 2
+  }
+
+  const stackItem = {
+    width: 'auto', 
+    p: 0, 
+    mr: 2 
+  }
+
+  const linkButton = {
+    background: '#0F0E17',
+    color: '#FCFCFC',
+    textTransform: 'lowercase',
+    fontSize: 14, 
+    fontFamily: 'Poppins',
+    width: '165px',
+    height: '40px',
+    borderRadius: 0,
+    marginRight: 2
+  }
+
   return (
     <>
-      <Container
-        sx={{
-          paddingY: 15
-        }}
-      >
-        <Typography 
-          variant='h4'
-          sx={{
-            fontSize: 35,
-            fontFamily: 'Poppins',
-            fontWeight: 700,
-            mb: 2
-          }}
-        >
-          Some of the projects I've created.
-        </Typography>
-        <Typography 
-          variant='paragraph'
-          sx={{
-            fontSize: 14,
-            fontFamily: 'Poppins'
-          }}
-        >
-          This is a collection of projects I've worked on as a user interface designer and web developer.
-        </Typography>
-        <Box
-          sx={{
-            pt: 8
-          }}
-        >
-          <Card
-            sx={{
-              display: 'flex',
-              width: '100%',
-              margin: 'auto',
-              background: 'transparent',
-              boxShadow: 0,
-              borderRadius: 0,
-              mb: 7
-            }}
-          >
-            <CardMedia 
-              component='img'
-              image={require('../img/regain_mockup.jpg')}
-              sx={{
-                width: '35%'
-              }}
-            />
-            <CardContent 
-              sx={{ 
-                width: '100%',
-                display: 'flex', 
-                flexDirection: 'column', 
-                justifyContent: 'center', 
-                p: 0, 
-                pl: 8 
-              }}
-            >
-              <Typography 
-                variant='paragraph' 
-                sx={{ 
-                  fontSize: 12, 
-                  fontFamily: 'Poppins ', 
-                  pb: 1/5, 
-                  color: '#FF8906', 
-                  textTransform: 'uppercase' 
-                }}
-              >
-                Web Project
-              </Typography>
-              <Typography 
-                variant='h4' 
-                sx={{ 
-                  fontSize: 35, 
-                  fontWeight: 600, 
-                  fontFamily: 'Poppins', 
-                  pb: 3 
-                }}
-              >
-                ReGain
-              </Typography>
-              <Typography 
-                variant='paragraph' 
-                sx={{ 
-                  fontSize: 14, 
-                  fontFamily: 'Poppins', 
-                  width: '80%', 
-                  flexWrap: 'wrap', 
-                  pb: 3,
-                  lineHeight: 2
-                }}
-              >
-                A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
-              </Typography>
-              <List 
-                sx={{ 
-                  display: 'flex', 
-                  width: '70%',  
-                  fontSize: 13, 
-                  fontFamily: 'Poppins', 
-                  p: 0, 
-                  flexWrap: 'wrap', 
-                  pb: 3, color: '#F25F4C' ,
-                  lineHeight: 2
-                }}
-              >
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  HTML
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  CSS
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  SASS
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  JavaScript
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  JQuery
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  Bootstrap
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  NodeJS
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  Firebase
-                </ListItem>
-                <ListItem 
-                  sx={{ 
-                    width: 'auto', 
-                    p: 0, 
-                    mr: 2 
-                  }}
-                >
-                  Google Cloud Storage
-                </ListItem>
+      <Container sx={container}>
+        <Typography variant='h4'sx={typographyH4}>Some of the projects I've created.</Typography>
+        <Typography variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</Typography>
+        <Box sx={boxA}>
+          <Card sx={cardA}>
+            <CardMedia component='img' image={require('../img/regain_mockup.jpg')} sx={cardMedia}/>
+            <CardContent sx={cardContentA}>
+              <Typography variant='paragraph' sx={paragraphB}>Web Project</Typography>
+              <Typography variant='h4' sx={typographyH4}>ReGain</Typography>
+              <Typography variant='paragraph' >A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</Typography>
+              <List sx={stackList}>
+                <ListItem sx={stackItem}>HTML</ListItem>
+                <ListItem sx={stackItem}>CSS</ListItem>
+                <ListItem sx={stackItem}>SASS</ListItem>
+                <ListItem sx={stackItem}>JavaScript</ListItem>
+                <ListItem sx={stackItem}>JQuery</ListItem>
+                <ListItem sx={stackItem}>Bootstrap</ListItem>
+                <ListItem sx={stackItem}>NodeJS</ListItem>
+                <ListItem sx={stackItem}>Firebase</ListItem>
+                <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
               </List>
-              <Box 
-                sx={{ 
-                  display: 'flex' 
-                }}
-              >
-                <Button
-                  href='#'
-                  target='#'
-                  variant='contained'
-                  style={{
-                    background: '#0F0E17',
-                    color: '#FCFCFC',
-                    textTransform: 'lowercase',
-                    fontSize: 14, 
-                    fontFamily: 'Poppins',
-                    width: '140px',
-                    height: '40px',
-                    borderRadius: 0,
-                    marginRight: 15
-                  }}
-                >
-                  source code
-                </Button>
-                <Button
-                  href='https://regain-caps.web.app'
-                  target='https://regain-caps.web.app'
-                  variant='contained'
-                  style={{
-                    background: '#0F0E17',
-                    color: '#FCFCFC',
-                    textTransform: 'lowercase',
-                    fontSize: 14, 
-                    fontFamily: 'Poppins',
-                    width: '140px',
-                    height: '40px',
-                    borderRadius: 0,
-                    marginRight: 15
-                  }}
-                >
-                  launch app
-                </Button>
+              <Box sx={boxB}>
+                <Button href='#' target='#' variant='contained' sx={linkButton}>source code</Button>
+                <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </Button>
               </Box>
             </CardContent>
           </Card>
 
-          <Card
-            sx={{
-              display: 'flex',
-              width: '100%',
-              margin: 'auto',
-              background: 'transparent',
-              boxShadow: 0,
-              borderRadius: 0,
-              mb: 7
-            }}
-          >
-            <CardContent 
-            sx={{ 
-              width: '100%', 
-              display: 'flex', 
-              flexDirection: 'column', 
-              justifyContent: 'center', 
-              p: 0, 
-              pr: 8 
-            }}
-            >
-              <Typography 
-              variant='paragraph' 
-              sx={{ 
-                fontSize: 12, 
-                fontFamily: 'Poppins ', 
-                pb: 1/5, 
-                color: '#FF8906', 
-                textTransform: 'uppercase' 
-              }}
-              >
-                Ui Design
-              </Typography>
-              <Typography 
-              variant='h4' 
-              sx={{ 
-                fontSize: 35, 
-                fontWeight: 600, 
-                fontFamily: 'Poppins', 
-                pb: 3 
-              }}
-              >
-                iSCAN
-              </Typography>
-              <Typography 
-              variant='paragraph' 
-              sx={{ 
-                fontSize: 14, 
-                fontFamily: 'Poppins', 
-                width: '80%', 
-                flexWrap: 'wrap', 
-                pb: 3 ,
-                lineHeight: 2
-              }}
-              >
-                A cloud based business management system with realtime menu viewer and ordering system using QR Code.
-              </Typography>
-              <List 
-              sx={{ 
-                display: 'flex', 
-                width: '70%',  
-                fontSize: 13, 
-                fontFamily: 'Poppins', 
-                p: 0, 
-                flexWrap: 'wrap', 
-                pb: 3, 
-                color: '#F25F4C' 
-              }}
-              >
-                <ListItem 
-                sx={{ 
-                  width: 'auto', 
-                  p: 0, 
-                  mr: 2 
-                }}
-                >
-                  Figma
-                </ListItem>
+          <Card sx={cardB}>
+            <CardContent sx={cardContentB}>
+              <Typography variant='paragraph' sx={paragraphB}>UI Design</Typography>
+              <Typography variant='h4' sx={typographyH4}>iSCAN</Typography>
+              <Typography variant='paragraph' sx={TypographyC}>A cloud based business management system with realtime menu viewer and ordering system using QR Code.</Typography>
+              <List sx={stackList}>
+                <ListItem sx={stackItem}>Figma</ListItem>
               </List>
-              <Box 
-              sx={{ 
-                display: 'flex' 
-              }}
-              >
-                <Button
-                  href='#'
-                  target='#'
-                  variant='contained'
-                  style={{
-                    background: '#0F0E17',
-                    color: '#FCFCFC',
-                    textTransform: 'lowercase',
-                    fontSize: 14, 
-                    fontFamily: 'Poppins',
-                    width: '180px',
-                    height: '40px',
-                    borderRadius: 0,
-                    marginRight: 15
-                  }}
-                >
-                  view in behance
-                </Button>
+              <Box sx={boxB}>
+                <Button href='#' target='#' variant='contained' sx={linkButton} >view in behance</Button>
               </Box>
             </CardContent>
-            <CardMedia 
-              component='img'
-              image={require('../img/cody_go_mockup.jpg')}
-              sx={{
-                width: '35%'
-              }}
-            />
+            <CardMedia component='img' image={require('../img/cody_go_mockup.jpg')} sx={cardMedia}/>
           </Card>
         </Box>
       </Container>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListItem, Link, Button } from '@mui/material'
+import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListItem, Button } from '@mui/material'
 
 function Project() {
 
@@ -112,12 +112,16 @@ function Project() {
     width: '165px',
     height: '40px',
     borderRadius: 0,
-    marginRight: 2
+    marginRight: 2,
+    '&:hover': {
+      background: '#0F0E17',
+      color: '#fcfcfc'
+    }
   }
 
   return (
     <>
-      <Container sx={container}>
+      <Container sx={container} id='projects'>
         <Typography variant='h4'sx={typographyH4}>Some of the projects I've created.</Typography>
         <Typography variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</Typography>
         <Box sx={boxA}>

@@ -1,7 +1,5 @@
 import React from 'react'
 import { Container, Typography, Button } from '@mui/material'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 
 function HeroSection() {
 

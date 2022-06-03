@@ -13,6 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.1",
+    "@mui/styles": "^5.8.0",
     "@react-spring/parallax": "^9.4.5",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -22,7 +23,9 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.7",
     "react-spring": "^9.4.5",
     "sass": "^1.52.1",
     "web-vitals": "^2.1.4"

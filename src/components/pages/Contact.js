@@ -68,7 +68,7 @@ function Contact() {
 
   return (
     <>
-      <Box sx={boxA}>
+      <Box sx={boxA} id='contact'>
         <Container sx={container}>
           <Typography variant='h4' sx={typographyH4}>Let's create progress together.</Typography>
           <Typography variant='paragraph' sx={paragraph}>If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.  </Typography>

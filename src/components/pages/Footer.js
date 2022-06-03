@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Typography, List, Link, IconButton } from '@mui/material'
+import { Container, Box, Typography, List, IconButton } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faGithub, faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
@@ -45,9 +45,8 @@ function Footer() {
   }
 
   const footerIcon = {
-    color: '#0F0E17', 
-    fontSize: 20,
     color: '#FCFCFC',
+    fontSize: 20,
     display: 'flex',
   }
 

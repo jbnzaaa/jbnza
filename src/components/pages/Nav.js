@@ -77,6 +77,7 @@ function Nav() {
           >
             <Link 
               href='https://github.com/jbnzaaa' 
+              target='https://github.com/jbnzaaa' 
               sx={{ 
                 mx: 1
               }}
@@ -92,6 +93,7 @@ function Nav() {
             </Link>
             <Link 
               href='https://www.behance.net/jbnza' 
+              target='https://www.behance.net/jbnza'
               sx={{ 
                 mx: 1
               }}
@@ -107,6 +109,7 @@ function Nav() {
             </Link>
             <Link 
               href='https://www.linkedin.com/in/jaybeniza/' 
+              target='https://www.linkedin.com/in/jaybeniza/'
               sx={{ 
                 mx: 1
               }}

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container, Box, Typography, List, Link } from '@mui/material'
-import { RiFacebookFill, RiInstagramLine, RiGithubLine, RiBehanceFill, RiLinkedinFill } from 'react-icons/ri'
-import { AiOutlineLine } from 'react-icons/ai'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram, faGithub, faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
   return (
@@ -34,8 +35,9 @@ function Footer() {
             >
               &copy; 2022 Jayson Beniza
             </Typography>
-            <AiOutlineLine
-              style={{
+            <FontAwesomeIcon 
+              icon={faArrowRightLong} 
+              style={{ 
                 marginLeft: 10,
                 marginRight: 10
               }}
@@ -59,14 +61,16 @@ function Footer() {
             >
               <Link 
                 href='https://www.facebook.com/jbnzaaa' 
+                target='https://www.facebook.com/jbnzaaa' 
                 sx={{ 
                   mx: 1
                 }}
               >
-                <RiFacebookFill
+                <FontAwesomeIcon 
+                  icon={faFacebookF} 
                   style={{ 
                     color: '#0F0E17', 
-                    fontSize: 23,
+                    fontSize: 20,
                     color: '#FCFCFC',
                     display: 'flex',
                   }}
@@ -74,11 +78,13 @@ function Footer() {
               </Link>
               <Link 
                 href='https://www.instagram.com/jbnza_/?hl=en' 
+                target='https://www.instagram.com/jbnza_/?hl=en' 
                 sx={{ 
                   mx: 1
                 }}
               >
-                <RiInstagramLine
+                <FontAwesomeIcon 
+                  icon={faInstagram} 
                   style={{ 
                     color: '#0F0E17', 
                     fontSize: 23,
@@ -89,11 +95,13 @@ function Footer() {
               </Link>
               <Link 
                 href='https://www.behance.net/jbnza' 
+                target='https://www.behance.net/jbnza' 
                 sx={{ 
                   mx: 1
                 }}
               >
-                <RiBehanceFill
+                <FontAwesomeIcon 
+                  icon={faGithub} 
                   style={{ 
                     color: '#0F0E17', 
                     fontSize: 23,
@@ -104,11 +112,13 @@ function Footer() {
               </Link>
               <Link 
                 href='https://github.com/jbnzaaa' 
+                target='https://github.com/jbnzaaa' 
                 sx={{ 
                   mx: 1
                 }}
               >
-                <RiGithubLine
+                <FontAwesomeIcon 
+                  icon={faBehance} 
                   style={{ 
                     color: '#0F0E17', 
                     fontSize: 23,
@@ -119,11 +129,13 @@ function Footer() {
               </Link>
               <Link 
                 href='https://www.linkedin.com/in/jaybeniza/' 
+                target='https://www.linkedin.com/in/jaybeniza/' 
                 sx={{ 
                   mx: 1
                 }}
               >
-                <RiLinkedinFill
+                <FontAwesomeIcon 
+                  icon={faLinkedinIn} 
                   style={{ 
                     color: '#0F0E17', 
                     fontSize: 23,

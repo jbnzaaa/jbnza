@@ -1,8 +1,5 @@
 import React from 'react'
 import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListItem, Link, Button } from '@mui/material'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
-import { faBehance } from '@fortawesome/free-brands-svg-icons'
 
 function Project() {
   return (
@@ -201,7 +198,8 @@ function Project() {
                 }}
               >
                 <Button
-                  href=''
+                  href='#'
+                  target='#'
                   variant='contained'
                   style={{
                     background: '#0F0E17',
@@ -218,6 +216,8 @@ function Project() {
                   source code
                 </Button>
                 <Button
+                  href='https://regain-caps.web.app'
+                  target='https://regain-caps.web.app'
                   variant='contained'
                   style={{
                     background: '#0F0E17',
@@ -322,6 +322,8 @@ function Project() {
               }}
               >
                 <Button
+                  href='#'
+                  target='#'
                   variant='contained'
                   style={{
                     background: '#0F0E17',

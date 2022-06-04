@@ -54,15 +54,15 @@ function Project() {
     mb: 7
   }
 
-  const cardB = {
-    display: 'flex',
-    width: '100%',
-    margin: 'auto',
-    background: 'transparent',
-    boxShadow: 0,
-    borderRadius: 0,
-    mb: 7
-  }
+  // const cardB = {
+  //   display: 'flex',
+  //   width: '100%',
+  //   margin: 'auto',
+  //   background: 'transparent',
+  //   boxShadow: 0,
+  //   borderRadius: 0,
+  //   mb: 7
+  // }
 
   const cardContentA = {
     width: '100%',
@@ -73,17 +73,17 @@ function Project() {
     pl: 8 
   }
 
-  const cardContentB = {
-    width: '100%', 
-    display: 'flex', 
-    flexDirection: 'column', 
-    justifyContent: 'center', 
-    p: 0, 
-    pr: 8 
-  }
+  // const cardContentB = {
+  //   width: '100%', 
+  //   display: 'flex', 
+  //   flexDirection: 'column', 
+  //   justifyContent: 'center', 
+  //   p: 0, 
+  //   pr: 8 
+  // }
 
   const cardMedia = {
-    width: '35%'
+    width: '40%'
   }
 
   const stackList = {
@@ -130,7 +130,7 @@ function Project() {
             <CardContent sx={cardContentA}>
               <Typography variant='paragraph' sx={paragraphB}>Web Project</Typography>
               <Typography variant='h4' sx={typographyH4}>ReGain</Typography>
-              <Typography variant='paragraph' >A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</Typography>
+              <Typography variant='paragraph' sx={TypographyC}>A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</Typography>
               <List sx={stackList}>
                 <ListItem sx={stackItem}>HTML</ListItem>
                 <ListItem sx={stackItem}>CSS</ListItem>
@@ -149,7 +149,7 @@ function Project() {
             </CardContent>
           </Card>
 
-          <Card sx={cardB}>
+          {/* <Card sx={cardB}>
             <CardContent sx={cardContentB}>
               <Typography variant='paragraph' sx={paragraphB}>UI Design</Typography>
               <Typography variant='h4' sx={typographyH4}>iSCAN</Typography>
@@ -162,7 +162,7 @@ function Project() {
               </Box>
             </CardContent>
             <CardMedia component='img' image={require('../img/cody_go_mockup.jpg')} sx={cardMedia}/>
-          </Card>
+          </Card> */}
         </Box>
       </Container>
     </>

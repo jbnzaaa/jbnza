@@ -10,7 +10,7 @@ function About() {
 
   const profile = {
     width: '370px',
-    marginRight: '40px'
+    marginLeft: '40px'
   }
 
   const boxA = {
@@ -86,9 +86,6 @@ function About() {
     <>
       <Container sx={container} id='about'>
         <Box>
-          <img src='https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80'alt='Profile'style={profile}/>
-        </Box>
-        <Box>
           <Box sx={boxA} >
             <Typography variant='h4' sx={typographyH4} >About Me.</Typography>
             <List>
@@ -135,6 +132,9 @@ function About() {
               </Box>
             </List>
           </Box>
+        </Box>
+        <Box>
+          <img src='https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80'alt='Profile'style={profile}/>
         </Box>
       </Container>
     </>

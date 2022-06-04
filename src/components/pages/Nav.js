@@ -36,8 +36,9 @@ const useStyles = makeStyles({
 function Nav() {
 
   const appBar = {
-    p: 2, 
-    boxShadow: 0
+    p: 2/2, 
+    boxShadow: 0,
+    background: '#FCFCFC'
   }
 
   const container = {
@@ -49,7 +50,7 @@ function Nav() {
   const navListLink = {
     display: 'flex', 
     justifyContent: 'space-between',
-    width: '230px',
+    width: '25%',
   }
 
   const navLink = {
@@ -58,7 +59,6 @@ function Nav() {
     fontWeight: 600,
     textDecoration: 'none', 
     color: '#0F0E17',
-    textDecoration: 'none'
   }
 
   const navLinkSocial = {
@@ -81,14 +81,15 @@ function Nav() {
   return (
     <>
       <BrowserRouter>
-        <AppBar position='static' color='transparent' sx={appBar}>
+        <AppBar position='sticky' color='transparent' sx={appBar}>
           <Container componet='div' sx={container}>
             <Link to="#">
               <Logo style={{ width: '50px' }}/>
             </Link>
             <List componet='div' sx={navListLink}>
-              <Link to='#about' style={navLink} className={classes.link}>About</Link>
+              <Link to='#' style={navLink} className={classes.link}>Home</Link>
               <Link to='#projects' style={navLink} className={classes.link}>Projects</Link>
+              <Link to='#about' style={navLink} className={classes.link}>About</Link>
               <Link to='#contact' style={navLink} className={classes.link}>Contact</Link>
             </List>
             <List componet='div' sx={navLinkSocial} >

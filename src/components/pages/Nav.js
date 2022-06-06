@@ -101,7 +101,7 @@ function Nav() {
   return (
     <>
       <BrowserRouter>
-        <AppBar position='static' sx={appBar}>
+        <AppBar position='sticky' sx={appBar}>
           <Container componet='div' sx={container}>
             <Link to="#">
               <Logo style={{ width: '50px' }}/>

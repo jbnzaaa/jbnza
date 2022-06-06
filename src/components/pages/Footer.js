@@ -36,7 +36,7 @@ function Footer() {
 
   const footerButton = {
     color: '#FCFCFC',
-    mx: 1,
+    mx: 1/3,
     fontSize: 17,
     '&:hover': {
       background: '#FCFCFC',
@@ -48,6 +48,7 @@ function Footer() {
     color: '#FCFCFC',
     fontSize: 20,
     display: 'flex',
+    marginRight: '10px'
   }
 
   return (

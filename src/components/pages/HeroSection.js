@@ -54,7 +54,11 @@ function HeroSection() {
     borderRadius: 0,
     '&:hover': {
       background: '#0F0E17',
-      // color: '#FCFCFC'
+      color: '#FCFCFC',
+      // background: '#FCFCFC',
+      // border: '2px solid #0F0E17',
+      // color: '#0F0E17',
+      // boxShadow: '5px 5px #0F0E17'
     }
   }
 
@@ -66,7 +70,8 @@ function HeroSection() {
           <Typography variant='h1' sx={typographyH1A}>Jayson Beniza</Typography>
           <Typography variant='h1' sx={typographyH1B}>I do web design & development.</Typography>
           <Typography variant='paragraph' sx={typographyPB}>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</Typography>
-          <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}>
+          <Button href='' target='' type='application/pdf' sx={viewmoreButton}>
+          {/* <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> */}
             {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
             download resume
           </Button>

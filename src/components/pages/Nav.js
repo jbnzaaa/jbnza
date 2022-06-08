@@ -4,40 +4,44 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { ReactComponent as Logo } from '../img/jbnza_initial_logo_dark.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { Container, AppBar, List, IconButton } from '@mui/material';
+import { Container, AppBar, List, IconButton } from '@mui/material'
 
-// import { makeStyles } from '@mui/styles'
+import { styled } from '@mui/material/styles'
 
-// const useStyles = makeStyles({
-//   link: {
-//     color: 'white',
-//     position: 'relative',
-//     '&:before': {
-//       content: "''",
-//       position: 'absolute',
-//       width: '0',
-//       height: '2px',
-//       bottom: '-3px',
-//       left: '-10%',
-//       transform: 'translate(-0%,0%)',
-//       backgroundColor: '#0F0E17',
-//       transformOrigin: 'center',
-//       visibility: 'hidden',
-//       transition: 'all 0.2s ease',
-//     },
-//     '&:hover:before': {
-//       visibility: 'visible',
-//       width: '120%',
-//     }
-//   },
-// })
+const NavListLink = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    display: 'none'
+  },
+  [theme.breakpoints.up('md')]: {
+    display: 'none'
+  },
+  [theme.breakpoints.up('lg')]: {
+    display: 'block'
+  },
+}))
+
+const NavSocialLink = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    display: 'none'
+  },
+  [theme.breakpoints.up('md')]: {
+    display: 'none'
+  },
+  [theme.breakpoints.up('lg')]: {
+    display: 'block'
+  },
+}))
 
 function Nav() {
 
-  const appBar = {
+  const appBar = {  
     p: 1, 
     boxShadow: 0,
     background: '#FCFCFC'
+  }
+
+  const cardMedia = {
+    width: '40%'
   }
 
   const container = {
@@ -58,27 +62,6 @@ function Nav() {
     fontWeight: 600,
     textDecoration: 'none', 
     color: '#0F0E17',
-    '&:hover': {
-      color: 'red'
-    }
-    // position: 'relative',
-    // '&:before': {
-    //   content: "''",
-    //   position: 'absolute',
-    //   width: '0',
-    //   height: '2px',
-    //   bottom: '-3px',
-    //   left: '-10%',
-    //   transform: 'translate(-0%,0%)',
-    //   backgroundColor: '#0F0E17',
-    //   transformOrigin: 'center',
-    //   visibility: 'hidden',
-    //   transition: 'all 0.2s ease',
-    // },
-    // '&:hover:before': {
-    //   visibility: 'visible',
-    //   width: '120%',
-    // }
   }
 
   const navLinkSocial = {
@@ -96,34 +79,35 @@ function Nav() {
     }
   }
 
-  // const classes = useStyles()
-
   return (
     <>
       <BrowserRouter>
-        <AppBar position='sticky' sx={appBar}>
+        <AppBar sx={appBar}>
           <Container componet='div' sx={container}>
             <Link to="#">
-              <Logo style={{ width: '50px' }}/>
+              <Logo style={{ width: '50px', display: 'flex', alignItems: 'center' }}/>
             </Link>
-            <List componet='div' sx={navListLink}>
-              <Link to='#' style={navLink}>Home</Link>
-              <Link to='#projects' style={navLink}>Projects</Link>
-              <Link to='#about' style={navLink}>About</Link>
-              <Link to='#contact' style={navLink}>Contact</Link>
-              {/* <Link to='#/' style={navLink} className={classes.link}>/</Link> */}
-            </List>
-            <List componet='div' sx={navLinkSocial} >
-              <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={navButton}>
-                <FontAwesomeIcon icon={faGithub} />
-              </IconButton>
-              <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={navButton}>
-                <FontAwesomeIcon icon={faBehance} />
-              </IconButton>
-              <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={navButton}>
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </IconButton>
-            </List>
+            <NavListLink>
+              <List componet='div' sx={navListLink}>
+                <Link to='#' style={navLink}>Home</Link>
+                <Link to='#projects' style={navLink}>Projects</Link>
+                <Link to='#about' style={navLink}>About</Link>
+                <Link to='#contact' style={navLink}>Contact</Link>
+              </List>
+            </NavListLink>
+            <NavSocialLink>
+              <List componet='div' sx={navLinkSocial} >
+                <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={navButton}>
+                  <FontAwesomeIcon icon={faGithub} />
+                </IconButton>
+                <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={navButton}>
+                  <FontAwesomeIcon icon={faBehance} />
+                </IconButton>
+                <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={navButton}>
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </IconButton>
+              </List>
+            </NavSocialLink>
           </Container>
         </AppBar>
       </BrowserRouter>

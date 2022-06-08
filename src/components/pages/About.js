@@ -1,6 +1,20 @@
 import React from 'react'
 import { Container, Box, Typography, List, ListItem } from '@mui/material'
 
+import { styled } from '@mui/material/styles'
+
+const TypographyH4 = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 30,
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 30,
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 35,
+  },
+}))
+
 function About() {
 
   const container = {

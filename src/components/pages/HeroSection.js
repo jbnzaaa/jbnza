@@ -1,6 +1,53 @@
 import React from 'react'
 import { Container, Typography, Button } from '@mui/material'
 
+import { styled } from '@mui/material/styles'
+
+const TypographyP = styled('p')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 12, 
+    width: '85%',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 12, 
+    width: '85%',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 14, 
+    width: '50%',
+  },
+}))
+
+const TypographyH1 = styled('h1')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 40, 
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 40, 
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 55, 
+  },
+}))
+
+const ButtonResume = styled('button')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 12, 
+    width: '150px',
+    height: '40px',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 12, 
+    width: '150px',
+    height: '40px',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 14, 
+    width: '170px',
+    height: '50px',
+  },
+}))
+
 function HeroSection() {
 
   const containerA = {
@@ -12,18 +59,18 @@ function HeroSection() {
   const containerB = {
     display: 'flex',  
     flexDirection: 'column', 
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
   }
 
   const typographyPA = {
     fontSize: 14, 
-    fontFamily: 'Poppins' 
+    fontFamily: 'Poppins' ,
+    textAlign: 'right'
   }
 
   const typographyPB = {
     fontSize: 14, 
     fontFamily: 'Poppins',
-    width: '50%',
     textAlign: 'right',
     mt: 2,
     lineHeight: 2
@@ -39,7 +86,8 @@ function HeroSection() {
     fontWeight: 'bold', 
     fontSize: 50, 
     color: '#FF8906', 
-    fontFamily: 'Poppins'
+    fontFamily: 'Poppins',
+    textAlign: 'right'
   }
 
   const viewmoreButton = {
@@ -55,10 +103,6 @@ function HeroSection() {
     '&:hover': {
       background: '#0F0E17',
       color: '#FCFCFC',
-      // background: '#FCFCFC',
-      // border: '2px solid #0F0E17',
-      // color: '#0F0E17',
-      // boxShadow: '5px 5px #0F0E17'
     }
   }
 
@@ -66,15 +110,15 @@ function HeroSection() {
     <>
       <Container componet='div' sx = {containerA}>
         <Container componet='div' sx = {containerB} >
-          <Typography variant='paragraph' sx={typographyPA}>Hi, my name is</Typography>
-          <Typography variant='h1' sx={typographyH1A}>Jayson Beniza</Typography>
-          <Typography variant='h1' sx={typographyH1B}>I do web design & development.</Typography>
-          <Typography variant='paragraph' sx={typographyPB}>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</Typography>
-          <Button href='' target='' type='application/pdf' sx={viewmoreButton}>
+          <TypographyP variant='paragraph' sx={typographyPA}>Hi, my name is</TypographyP>
+          <TypographyH1 variant='h1' sx={typographyH1A}>Jayson Beniza</TypographyH1>
+          <TypographyH1 variant='h1' sx={typographyH1B}>I do web design & development.</TypographyH1>
+          <TypographyP variant='paragraph' sx={typographyPB}>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</TypographyP>
+          <ButtonResume href='' target='' type='application/pdf' sx={viewmoreButton}> 
           {/* <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> */}
             {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
             download resume
-          </Button>
+          </ButtonResume> 
         </Container>
       </Container>
     </>

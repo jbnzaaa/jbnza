@@ -1,6 +1,106 @@
 import React from 'react'
 import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListItem, Button } from '@mui/material'
 
+import { styled } from '@mui/material/styles'
+
+const TypographyH4 = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 30,
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 30,
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 35,
+  },
+}))
+
+const TypographyP = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 12,
+    width: '100%'
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 12,
+    width: '100%'
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 14,
+    width: '100%'
+  },
+}))
+
+const CardItem = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    display: 'block',
+  },
+  [theme.breakpoints.up('md')]: {
+    fdisplay: 'block',
+  },
+  [theme.breakpoints.up('lg')]: {
+    display: 'flex',
+  },
+}))
+
+const ProjectMedia = styled('img')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    width: '100%',
+    marginBottom: 40
+  },
+  [theme.breakpoints.up('md')]: {
+    // display: 'none',
+  },
+  [theme.breakpoints.up('lg')]: {
+    display: 'block',
+  },
+}))
+
+const ProjectContent = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    width: '85%',
+    padding: 0, 
+    margin: 'auto',
+  },
+  [theme.breakpoints.up('md')]: {
+    width: '85%',
+    padding: 0, 
+    margin: 'auto'
+  },
+  [theme.breakpoints.up('lg')]: {
+    width: '100%',
+    padding: 0, 
+    paddingLeft: 80
+  },
+}))
+
+const TypographySpan = styled('p')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 10, 
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 10, 
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 12, 
+  },
+}))
+
+const StackList = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    display: 'flex', 
+    width: '100%',  
+    fontSize: 11, 
+  },
+  [theme.breakpoints.up('md')]: {
+    display: 'flex', 
+    width: '100%',  
+    fontSize: 11, 
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 13, 
+  },
+}))
+
 function Project() {
 
   const container = {
@@ -122,16 +222,16 @@ function Project() {
   return (
     <>
       <Container sx={container} id='projects'>
-        <Typography variant='h4'sx={typographyH4}>Some of the projects I've created.</Typography>
-        <Typography variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</Typography>
+        <TypographyH4 variant='h4'sx={typographyH4}>Some of the projects I've created.</TypographyH4>
+        <TypographyP variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</TypographyP>
         <Box sx={boxA}>
-          <Card sx={cardA}>
-            <CardMedia component='img' image={require('../img/regain_mockup.jpg')} sx={cardMedia}/>
-            <CardContent sx={cardContentA}>
-              <Typography variant='paragraph' sx={paragraphB}>Web Project</Typography>
-              <Typography variant='h4' sx={typographyH4}>ReGain</Typography>
-              <Typography variant='paragraph' sx={TypographyC}>A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</Typography>
-              <List sx={stackList}>
+          <CardItem sx={cardA}>
+            <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
+            <ProjectContent sx={cardContentA}>
+              <TypographySpan variant='paragraph' sx={paragraphB}>Web Project</TypographySpan>
+              <TypographyH4 variant='h4' sx={typographyH4}>ReGain</TypographyH4>
+              <TypographyP variant='paragraph' sx={TypographyC}>A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</TypographyP>
+              <StackList sx={stackList}>
                 <ListItem sx={stackItem}>HTML</ListItem>
                 <ListItem sx={stackItem}>CSS</ListItem>
                 <ListItem sx={stackItem}>SASS</ListItem>
@@ -141,28 +241,13 @@ function Project() {
                 <ListItem sx={stackItem}>NodeJS</ListItem>
                 <ListItem sx={stackItem}>Firebase</ListItem>
                 <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
-              </List>
+              </StackList>
               <Box sx={boxB}>
                 <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</Button>
                 <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </Button>
               </Box>
-            </CardContent>
-          </Card>
-
-          {/* <Card sx={cardB}>
-            <CardContent sx={cardContentB}>
-              <Typography variant='paragraph' sx={paragraphB}>UI Design</Typography>
-              <Typography variant='h4' sx={typographyH4}>iSCAN</Typography>
-              <Typography variant='paragraph' sx={TypographyC}>A cloud based business management system with realtime menu viewer and ordering system using QR Code.</Typography>
-              <List sx={stackList}>
-                <ListItem sx={stackItem}>Figma</ListItem>
-              </List>
-              <Box sx={boxB}>
-                <Button href='#' target='#' variant='contained' sx={linkButton} >view in behance</Button>
-              </Box>
-            </CardContent>
-            <CardMedia component='img' image={require('../img/cody_go_mockup.jpg')} sx={cardMedia}/>
-          </Card> */}
+            </ProjectContent>
+          </CardItem>
         </Box>
       </Container>
     </>

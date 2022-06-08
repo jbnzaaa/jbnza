@@ -7,7 +7,7 @@ import { ReactComponent as OutlineLogo } from '../img/jbnza_outline_logo.svg'
 function Home() {
   return (
     <>
-      <OutlineLogo id="outline_logo"/>
+      {/* <OutlineLogo id="outline_logo"/> */}
       <Nav/>
       <HeroSection/>
     </>

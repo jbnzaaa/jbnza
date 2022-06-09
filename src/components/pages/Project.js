@@ -3,7 +3,19 @@ import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListIte
 
 import { styled } from '@mui/material/styles'
 
-const TypographyH4 = styled('div')(({theme}) => ({
+const ProjectContainer = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    padding: '50px 0',
+  },
+  [theme.breakpoints.up('md')]: {
+    padding: '50px 0',
+  },
+  [theme.breakpoints.up('lg')]: {
+    paddingY: 15
+  },
+}))
+
+const TypographyH4 = styled('h4')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 30,
   },
@@ -15,7 +27,7 @@ const TypographyH4 = styled('div')(({theme}) => ({
   },
 }))
 
-const TypographyP = styled('div')(({theme}) => ({
+const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 12,
     width: '100%'
@@ -240,34 +252,36 @@ function Project() {
 
   return (
     <>
-      <Container sx={container} id='projects'>
-        <TypographyH4 variant='h4'sx={typographyH4}>Some of the projects I've created.</TypographyH4>
-        <TypographyP variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</TypographyP>
-        <Box sx={boxA}>
-          <CardItem sx={cardA}>
-            <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
-            <ProjectContent sx={cardContentA}>
-              <TypographySpan variant='paragraph' sx={paragraphB}>Web Project</TypographySpan>
-              <TypographyH4 variant='h4' sx={typographyH4}>ReGain</TypographyH4>
-              <TypographyP variant='paragraph' sx={TypographyC}>A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</TypographyP>
-              <StackList sx={stackList}>
-                <ListItem sx={stackItem}>HTML</ListItem>
-                <ListItem sx={stackItem}>CSS</ListItem>
-                <ListItem sx={stackItem}>SASS</ListItem>
-                <ListItem sx={stackItem}>JavaScript</ListItem>
-                <ListItem sx={stackItem}>JQuery</ListItem>
-                <ListItem sx={stackItem}>Bootstrap</ListItem>
-                <ListItem sx={stackItem}>NodeJS</ListItem>
-                <ListItem sx={stackItem}>Firebase</ListItem>
-                <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
-              </StackList>
-              <Box sx={boxB}>
-                <ButtonLink href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</ButtonLink>
-                <ButtonLink href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </ButtonLink>
-              </Box>
-            </ProjectContent>
-          </CardItem>
-        </Box>
+      <Container>
+        <ProjectContainer sx={container} id='projects'>
+          <TypographyH4 variant='h4'sx={typographyH4}>Some of the projects I've created.</TypographyH4>
+          <TypographyP variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</TypographyP>
+          <Box sx={boxA}>
+            <CardItem sx={cardA}>
+              <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
+              <ProjectContent sx={cardContentA}>
+                <TypographySpan variant='paragraph' sx={paragraphB}>Web Project</TypographySpan>
+                <TypographyH4 variant='h4' sx={typographyH4}>ReGain</TypographyH4>
+                <TypographyP variant='paragraph' sx={TypographyC}>A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</TypographyP>
+                <StackList sx={stackList}>
+                  <ListItem sx={stackItem}>HTML</ListItem>
+                  <ListItem sx={stackItem}>CSS</ListItem>
+                  <ListItem sx={stackItem}>SASS</ListItem>
+                  <ListItem sx={stackItem}>JavaScript</ListItem>
+                  <ListItem sx={stackItem}>JQuery</ListItem>
+                  <ListItem sx={stackItem}>Bootstrap</ListItem>
+                  <ListItem sx={stackItem}>NodeJS</ListItem>
+                  <ListItem sx={stackItem}>Firebase</ListItem>
+                  <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
+                </StackList>
+                <Box sx={boxB}>
+                  <ButtonLink href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</ButtonLink>
+                  <ButtonLink href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </ButtonLink>
+                </Box>
+              </ProjectContent>
+            </CardItem>
+          </Box>
+        </ProjectContainer>
       </Container>
     </>
   )

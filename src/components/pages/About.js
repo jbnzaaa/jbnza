@@ -7,24 +7,23 @@ const AboutContainer = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     display: 'flex',
     flexDirection: 'column-reverse',
-    paddingY: 15,
+    padding: '50px 0',
   },
   [theme.breakpoints.up('md')]: {
     display: 'flex',
     flexDirection: 'column-reverse',
-    paddingY: 15,
+    padding: '50px 0',
   },
   [theme.breakpoints.up('lg')]: {
     display: 'flex',
     flexDirection: 'row',
-    paddingY: 15
   },
 }))
 
 const ProfileImage = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     width: '45%',
-    background: 'red',
+    display: 'none'
   },
   [theme.breakpoints.up('lg')]: {
     display: 'block',

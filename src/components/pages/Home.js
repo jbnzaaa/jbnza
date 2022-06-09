@@ -8,14 +8,14 @@ import { styled } from '@mui/material/styles'
 
 const OutlineBG = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    width: '2100px',
-    top: '1010px',
-    left: '-830px',
+    width: '1900px',
+    top: '800px',
+    left: '-730px',
   },
   [theme.breakpoints.up('md')]: {
-    width: '2100px',
-    top: '1010px',
-    left: '-830px',
+    width: '1900px',
+    top: '800px',
+    left: '-730px',
   },
   [theme.breakpoints.up('lg')]: {
     top: '1050px',

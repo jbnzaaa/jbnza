@@ -50,6 +50,7 @@ const InputField = styled('div')(({theme}) => ({
   },
   [theme.breakpoints.up('lg')]: {
     width: '70%',
+    paddingTop: '64px'
   },
 }))
 
@@ -78,11 +79,9 @@ function Contact() {
   }
 
   const boxB = {
-    my: 5,
     display: 'flex',
     flexDirection: 'column',
     width: '70%',
-    pt: '64px'
   }
 
   const container = {

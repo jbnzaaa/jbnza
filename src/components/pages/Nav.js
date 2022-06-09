@@ -10,10 +10,10 @@ import { styled } from '@mui/material/styles'
 
 const NavListLink = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    display: 'none'
+    display: 'none', 
   },
   [theme.breakpoints.up('md')]: {
-    display: 'none'
+    display: 'none', 
   },
   [theme.breakpoints.up('lg')]: {
     display: 'block'

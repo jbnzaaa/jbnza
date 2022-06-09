@@ -2,12 +2,43 @@ import '../styles/style.css'
 import React from 'react'
 import Nav from './Nav'
 import HeroSection from './HeroSection'
-import { ReactComponent as OutlineLogo } from '../img/jbnza_outline_logo.svg'
+// import { ReactComponent as OutlineLogo } from '../img/jbnza_outline_logo.svg'
+
+import { styled } from '@mui/material/styles'
+
+const OutlineBG = styled('img')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    width: '2100px',
+    top: '1010px',
+    left: '-830px',
+  },
+  [theme.breakpoints.up('md')]: {
+    width: '2100px',
+    top: '1010px',
+    left: '-830px',
+  },
+  [theme.breakpoints.up('lg')]: {
+    top: '1050px',
+    left: '-830px',
+    width: '2500px',
+  },
+}))
 
 function Home() {
+
+  const outlineLogo = {  
+    transform: 'rotate(90deg)',
+    position: 'absolute',
+    top: '1050px',
+    left: '-830px',
+    zIndex: '-1',
+    width: '2500px',
+    opacity: '.05',
+  }
+
   return (
     <>
-      {/* <OutlineLogo id="outline_logo"/> */}
+      <OutlineBG sx={outlineLogo} src={require('../img/jbnza_outline_logo.png')}/>
       <Nav/>
       <HeroSection/>
     </>

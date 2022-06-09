@@ -53,7 +53,7 @@ function HeroSection() {
   const containerA = {
     display: 'flex',
     alignItems: 'center',
-    height: '95vh',
+    height: '100vh',
   }
 
   const containerB = {
@@ -100,6 +100,7 @@ function HeroSection() {
     width: '170px',
     height: '50px',
     borderRadius: 0,
+    border: 'none',
     '&:hover': {
       background: '#0F0E17',
       color: '#FCFCFC',

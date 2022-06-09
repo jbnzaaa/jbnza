@@ -101,6 +101,24 @@ const StackList = styled('div')(({theme}) => ({
   },
 }))
 
+const ButtonLink = styled('button')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 12, 
+    width: '155px',
+    height: '35px',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 12, 
+    width: '155px',
+    height: '35px',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 14, 
+    width: '165px',
+    height: '40px',
+  },
+}))
+
 function Project() {
 
   const container = {
@@ -204,6 +222,7 @@ function Project() {
   }
 
   const linkButton = {
+    border: 'none',
     background: '#0F0E17',
     color: '#FCFCFC',
     textTransform: 'lowercase',
@@ -243,8 +262,8 @@ function Project() {
                 <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
               </StackList>
               <Box sx={boxB}>
-                <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</Button>
-                <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </Button>
+                <ButtonLink href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</ButtonLink>
+                <ButtonLink href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </ButtonLink>
               </Box>
             </ProjectContent>
           </CardItem>

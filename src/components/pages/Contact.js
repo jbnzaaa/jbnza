@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Box, Typography, TextField, Button } from '@mui/material'
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { GrSend } from 'react-icons/gr'
 
 const theme = createTheme({
@@ -13,6 +13,64 @@ const theme = createTheme({
   }
 });
 
+const TypographyH4 = styled('h4')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 30,
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 30,
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 35,
+  },
+}))
+
+const TypographyP = styled('p')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 12,
+    width: '100%',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 12,
+    width: '100%',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 14,
+  },
+}))
+
+const InputField = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    width: '100%',
+    paddingTop: '40px'
+  },
+  [theme.breakpoints.up('md')]: {
+    width: '100%',
+    paddingTop: '40px'
+  },
+  [theme.breakpoints.up('lg')]: {
+    width: '70%',
+  },
+}))
+
+const SendMessageButton = styled('button')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    width: '150px',
+    height: '40px',
+    fontSize: 12,
+  },
+  [theme.breakpoints.up('md')]: {
+    width: '150px',
+    height: '40px',
+    fontSize: 12,
+  },
+  [theme.breakpoints.up('lg')]: {
+    width: '190px',
+    height: '50px',
+    fontSize: 14,
+  },
+}))
+
 function Contact() {
 
   const boxA = {
@@ -24,6 +82,7 @@ function Contact() {
     display: 'flex',
     flexDirection: 'column',
     width: '70%',
+    pt: '64px'
   }
 
   const container = {
@@ -60,6 +119,10 @@ function Contact() {
     color: '#0F0E17',
     borderRadius: 0,
     fontSize: 14,
+    border: 'none',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: 2,
     '&:hover': {
       background: '#FF8906',
@@ -70,20 +133,20 @@ function Contact() {
     <>
       <Box sx={boxA} id='contact'>
         <Container sx={container}>
-          <Typography variant='h4' sx={typographyH4}>Let's create progress together.</Typography>
-          <Typography variant='paragraph' sx={paragraph}>If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.  </Typography>
-          <Box sx={boxB}>
+          <TypographyH4 variant='h4' sx={typographyH4}>Let's create progress together.</TypographyH4>
+          <TypographyP variant='paragraph' sx={paragraph}>If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.  </TypographyP>
+          <InputField sx={boxB}>
             <ThemeProvider theme={theme}>
               <TextField label='Your Name' variant='standard'color='neutral'sx={textfeild}/>
               <TextField label='Your Email' variant='standard'color='neutral'sx={textfeild}/>
               <TextField label='Subject' variant='standard'color='neutral'sx={textfeild}/>
               <TextField label='Message' variant='standard'color='neutral'sx={textfeild}/>
-              <Button sx={sendButton}>
+              <SendMessageButton sx={sendButton}>
                 send Message
                 <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
-              </Button>
+              </SendMessageButton>
             </ThemeProvider>
-          </Box>
+          </InputField>
         </Container>
       </Box>
     </>

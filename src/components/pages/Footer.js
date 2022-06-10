@@ -9,40 +9,34 @@ import { styled } from '@mui/material/styles'
 const NavFooter = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     display: 'flex',
-    flexDirection: 'column-reverse',
     alignItems: 'center',
-    width: '100%'
-  },
-  [theme.breakpoints.up('md')]: {
-    display: 'flex',
     flexDirection: 'column-reverse',
-    alignItems: 'center',
-    width: '100%'
+    justifyContent: 'center',
+    height: '25vh',
+    width: '100%',
+    padding: '40px 0'
   },
   [theme.breakpoints.up('lg')]: {
     display: 'flex',
     alignItems: 'center',
+    flexDirection: 'row',
+    height: '20vh',
+    width: '100%'
   },
 }))
 
-const CopyRight = styled('div')(({theme}) => ({
+const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    marginBottom: '30px'
-  },
-  [theme.breakpoints.up('md')]: {
-    marginBottom: '30px'
+    fontSize: '12px'
   },
   [theme.breakpoints.up('lg')]: {
-    display: 'flex',
-    alignItems: 'center',
+    fontSize: '14px'
   },
 }))
 
-const SocialLinks = styled('div')(({theme}) => ({
+const FooterBox = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    marginBottom: '30px'
-  },
-  [theme.breakpoints.up('md')]: {
+    // background: 'red',
     marginBottom: '30px'
   },
   [theme.breakpoints.up('lg')]: {
@@ -57,13 +51,13 @@ function Footer() {
     background: '#010104',
   }
 
-  const boxB = {
-    display: 'flex',
-    alignItems: 'center',
-  }
+  // const boxB = {
+  //   display: 'flex',
+  //   alignItems: 'center',
+  // }
 
   const container = {
-    height: '15vh',
+    height: '20vh',
     color: '#FCFCFC',
     display: 'flex',
     justifyContent: 'space-between',
@@ -101,12 +95,10 @@ function Footer() {
   return (
     <>
       <Box sx={boxA}>
-        <Container sx={container}>
-          <NavFooter>
-            <CopyRight sx={boxB}>
-              <Typography sx={typographyFooter}>&copy; 2022 Jayson Beniza</Typography>
-            </CopyRight>
-            <SocialLinks>
+        <Container>
+          <NavFooter sx={container}>
+            <TypographyP sx={typographyFooter}>&copy; 2022 Jayson Beniza</TypographyP>
+            <FooterBox>
               <List componet='div'  sx = {footerList}>
                 <Typography sx={typographyFooter}>jbnzaaa@gmail.com</Typography>
                 <FontAwesomeIcon icon={faMinus} style={footerIcon}/>
@@ -126,7 +118,7 @@ function Footer() {
                   <FontAwesomeIcon icon={faLinkedinIn} sx={footerIcon}/>
                 </IconButton>
               </List>
-            </SocialLinks>
+            </FooterBox>
           </NavFooter>
         </Container>
       </Box>

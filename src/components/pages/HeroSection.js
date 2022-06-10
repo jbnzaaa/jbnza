@@ -8,10 +8,6 @@ const TypographyP = styled('p')(({theme}) => ({
     fontSize: 12, 
     width: '85%',
   },
-  [theme.breakpoints.up('md')]: {
-    fontSize: 12, 
-    width: '85%',
-  },
   [theme.breakpoints.up('lg')]: {
     fontSize: 14, 
     width: '50%',
@@ -22,9 +18,6 @@ const TypographyH1 = styled('h1')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 40, 
   },
-  [theme.breakpoints.up('md')]: {
-    fontSize: 40, 
-  },
   [theme.breakpoints.up('lg')]: {
     fontSize: 55, 
   },
@@ -32,11 +25,6 @@ const TypographyH1 = styled('h1')(({theme}) => ({
 
 const ButtonResume = styled('button')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    fontSize: 12, 
-    width: '150px',
-    height: '40px',
-  },
-  [theme.breakpoints.up('md')]: {
     fontSize: 12, 
     width: '150px',
     height: '40px',
@@ -115,11 +103,11 @@ function HeroSection() {
           <TypographyH1 variant='h1' sx={typographyH1A}>Jayson Beniza</TypographyH1>
           <TypographyH1 variant='h1' sx={typographyH1B}>I do web design & development.</TypographyH1>
           <TypographyP variant='paragraph' sx={typographyPB}>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</TypographyP>
-          <ButtonResume href='' target='' type='application/pdf' sx={viewmoreButton}> 
+          <Button href='' target='' type='application/pdf' sx={viewmoreButton}> 
           {/* <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> */}
             {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
             download resume
-          </ButtonResume> 
+          </Button> 
         </Container>
       </Container>
     </>

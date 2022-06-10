@@ -12,9 +12,6 @@ const NavListLink = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     display: 'none', 
   },
-  [theme.breakpoints.up('md')]: {
-    display: 'none', 
-  },
   [theme.breakpoints.up('lg')]: {
     display: 'block'
   },
@@ -22,9 +19,6 @@ const NavListLink = styled('div')(({theme}) => ({
 
 const NavSocialLink = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    display: 'none'
-  },
-  [theme.breakpoints.up('md')]: {
     display: 'none'
   },
   [theme.breakpoints.up('lg')]: {

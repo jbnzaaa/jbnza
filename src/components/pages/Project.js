@@ -7,9 +7,6 @@ const ProjectContainer = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     padding: '50px 0',
   },
-  [theme.breakpoints.up('md')]: {
-    padding: '50px 0',
-  },
   [theme.breakpoints.up('lg')]: {
     paddingY: 15
   },
@@ -19,9 +16,6 @@ const TypographyH4 = styled('h4')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 30,
   },
-  [theme.breakpoints.up('md')]: {
-    fontSize: 30,
-  },
   [theme.breakpoints.up('lg')]: {
     fontSize: 35,
   },
@@ -29,10 +23,6 @@ const TypographyH4 = styled('h4')(({theme}) => ({
 
 const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    fontSize: 12,
-    width: '100%'
-  },
-  [theme.breakpoints.up('md')]: {
     fontSize: 12,
     width: '100%'
   },
@@ -46,9 +36,6 @@ const CardItem = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     display: 'block',
   },
-  [theme.breakpoints.up('md')]: {
-    fdisplay: 'block',
-  },
   [theme.breakpoints.up('lg')]: {
     display: 'flex',
   },
@@ -57,10 +44,8 @@ const CardItem = styled('div')(({theme}) => ({
 const ProjectMedia = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     width: '100%',
-    marginBottom: 40
-  },
-  [theme.breakpoints.up('md')]: {
-    // display: 'none',
+    marginBottom: 40,
+    display: 'none'
   },
   [theme.breakpoints.up('lg')]: {
     display: 'block',
@@ -73,11 +58,6 @@ const ProjectContent = styled('div')(({theme}) => ({
     padding: 0, 
     margin: 'auto',
   },
-  [theme.breakpoints.up('md')]: {
-    width: '85%',
-    padding: 0, 
-    margin: 'auto'
-  },
   [theme.breakpoints.up('lg')]: {
     width: '100%',
     padding: 0, 
@@ -87,9 +67,6 @@ const ProjectContent = styled('div')(({theme}) => ({
 
 const TypographySpan = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    fontSize: 10, 
-  },
-  [theme.breakpoints.up('md')]: {
     fontSize: 10, 
   },
   [theme.breakpoints.up('lg')]: {
@@ -103,11 +80,6 @@ const StackList = styled('div')(({theme}) => ({
     width: '100%',  
     fontSize: 11, 
   },
-  [theme.breakpoints.up('md')]: {
-    display: 'flex', 
-    width: '100%',  
-    fontSize: 11, 
-  },
   [theme.breakpoints.up('lg')]: {
     fontSize: 13, 
   },
@@ -115,11 +87,6 @@ const StackList = styled('div')(({theme}) => ({
 
 const ButtonLink = styled('button')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    fontSize: 12, 
-    width: '155px',
-    height: '35px',
-  },
-  [theme.breakpoints.up('md')]: {
     fontSize: 12, 
     width: '155px',
     height: '35px',
@@ -275,8 +242,8 @@ function Project() {
                   <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
                 </StackList>
                 <Box sx={boxB}>
-                  <ButtonLink href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</ButtonLink>
-                  <ButtonLink href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </ButtonLink>
+                  <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</Button>
+                  <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </Button>
                 </Box>
               </ProjectContent>
             </CardItem>

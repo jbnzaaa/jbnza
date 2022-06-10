@@ -9,11 +9,6 @@ const AboutContainer = styled('div')(({theme}) => ({
     flexDirection: 'column-reverse',
     padding: '50px 0',
   },
-  [theme.breakpoints.up('md')]: {
-    display: 'flex',
-    flexDirection: 'column-reverse',
-    padding: '50px 0',
-  },
   [theme.breakpoints.up('lg')]: {
     display: 'flex',
     flexDirection: 'row',
@@ -56,6 +51,18 @@ const TypographyH6 = styled('h6')(({theme}) => ({
     fontSize: 14,
   },
 }))
+
+const Lists = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    display: 'flex',
+    alignItems: 'start'
+  },
+  [theme.breakpoints.up('lg')]: {
+    display: 'flex',
+    alignItems: 'start',
+  },
+}))
+
 
 function About() {
 
@@ -109,11 +116,11 @@ function About() {
   }
 
   const whatIuse = {
-    pt: 3
+    pt: 3,
   }
 
   const whatIuseList = {
-    p: 0
+    p: 0,
   }
 
   const boxB = {
@@ -165,16 +172,16 @@ function About() {
               </TypographyP>
               <List sx={whatIuse} >
                 <TypographyH6 variant='h6' sx={typographyH6} >Graphics Design</TypographyH6>
-                <Box sx={boxC} >
+                <Lists sx={boxC} >
                   <ListItem sx={listItem}>Adobe Photoshop</ListItem>
                   <ListItem sx={listItem}>Adobe Illustrator</ListItem>
                   <ListItem sx={listItem}>Adobe Xd</ListItem>
                   <ListItem sx={listItem}>Figma</ListItem>
-                </Box>
+                </Lists>
               </List>
               <List sx={whatIuseList} >
                 <TypographyH6 variant='h6' sx={typographyH6}>Web Development</TypographyH6>
-                <Box sx={boxD}>
+                <Lists sx={boxD}>
                   <ListItem sx={listItem}>HTML 5</ListItem>
                   <ListItem sx={listItem}>CSS 3</ListItem>
                   <ListItem sx={listItem}>SASS</ListItem>
@@ -186,7 +193,7 @@ function About() {
                   <ListItem sx={listItem}>Firebase</ListItem>
                   <ListItem sx={listItem}>NodeJS</ListItem>
                   <ListItem sx={listItem}>NPM</ListItem>
-                </Box>
+                </Lists>
               </List>
             </Box>
           </Box>

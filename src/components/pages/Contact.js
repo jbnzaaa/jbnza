@@ -17,9 +17,6 @@ const TypographyH4 = styled('h4')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 30,
   },
-  [theme.breakpoints.up('md')]: {
-    fontSize: 30,
-  },
   [theme.breakpoints.up('lg')]: {
     fontSize: 35,
   },
@@ -27,10 +24,6 @@ const TypographyH4 = styled('h4')(({theme}) => ({
 
 const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    fontSize: 12,
-    width: '100%',
-  },
-  [theme.breakpoints.up('md')]: {
     fontSize: 12,
     width: '100%',
   },
@@ -44,10 +37,6 @@ const InputField = styled('div')(({theme}) => ({
     width: '100%',
     paddingTop: '40px'
   },
-  [theme.breakpoints.up('md')]: {
-    width: '100%',
-    paddingTop: '40px'
-  },
   [theme.breakpoints.up('lg')]: {
     width: '70%',
     paddingTop: '64px'
@@ -56,11 +45,6 @@ const InputField = styled('div')(({theme}) => ({
 
 const SendMessageButton = styled('button')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    width: '150px',
-    height: '40px',
-    fontSize: 12,
-  },
-  [theme.breakpoints.up('md')]: {
     width: '150px',
     height: '40px',
     fontSize: 12,
@@ -140,10 +124,10 @@ function Contact() {
               <TextField label='Your Email' variant='standard'color='neutral'sx={textfeild}/>
               <TextField label='Subject' variant='standard'color='neutral'sx={textfeild}/>
               <TextField label='Message' variant='standard'color='neutral'sx={textfeild}/>
-              <SendMessageButton sx={sendButton}>
+              <Button sx={sendButton}>
                 send Message
                 <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
-              </SendMessageButton>
+              </Button>
             </ThemeProvider>
           </InputField>
         </Container>

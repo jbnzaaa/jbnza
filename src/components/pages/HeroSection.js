@@ -1,7 +1,21 @@
 import React from 'react'
-import { Container, Typography, Button } from '@mui/material'
+import { Container, Typography, Button, Box } from '@mui/material'
 
 import { styled } from '@mui/material/styles'
+
+// const HeroContainer = styled('div')(({theme}) => ({
+//   [theme.breakpoints.down('md')]: {
+//     display: 'flex',
+//     // alignItems: 'end',
+//     // paddingBottom: '100px',
+//     height: '100vh',
+//   },
+//   [theme.breakpoints.up('lg')]: {
+//     display: 'flex',
+//     alignItems: 'center',
+//     height: '100vh',
+//   },
+// }))
 
 const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
@@ -23,16 +37,12 @@ const TypographyH1 = styled('h1')(({theme}) => ({
   },
 }))
 
-const ButtonResume = styled('button')(({theme}) => ({
+const ButtonTypography = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 12, 
-    width: '150px',
-    height: '40px',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 14, 
-    width: '170px',
-    height: '50px',
   },
 }))
 
@@ -79,11 +89,11 @@ function HeroSection() {
   }
 
   const viewmoreButton = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: 'none',
     background: '#0F0E17',
-    color: '#FCFCFC',
-    textTransform: 'lowercase',
-    fontSize: 14, 
-    fontFamily: 'Poppins',
     marginTop: 2,
     width: '170px',
     height: '50px',
@@ -95,9 +105,19 @@ function HeroSection() {
     }
   }
 
+  const typographyButton = {
+    color: '#FCFCFC',
+    textTransform: 'lowercase',
+    fontSize: 14, 
+    fontFamily: 'Poppins',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+
   return (
     <>
-      <Container componet='div' sx = {containerA}>
+      <Box componet='div' sx = {containerA}>
         <Container componet='div' sx = {containerB} >
           <TypographyP variant='paragraph' sx={typographyPA}>Hi, my name is</TypographyP>
           <TypographyH1 variant='h1' sx={typographyH1A}>Jayson Beniza</TypographyH1>
@@ -106,10 +126,10 @@ function HeroSection() {
           <Button href='' target='' type='application/pdf' sx={viewmoreButton}> 
           {/* <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> */}
             {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
-            download resume
+            <ButtonTypography sx={typographyButton}>download resume</ButtonTypography>
           </Button> 
         </Container>
-      </Container>
+      </Box>
     </>
   )
 }

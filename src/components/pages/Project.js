@@ -35,6 +35,9 @@ const TypographyP = styled('p')(({theme}) => ({
 const CardItem = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     display: 'block',
+    // background: '#0F0E17',
+    // color: '#FCFCFC'
+    // padding: '30px',
   },
   [theme.breakpoints.up('lg')]: {
     display: 'flex',
@@ -45,7 +48,7 @@ const ProjectMedia = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     width: '100%',
     marginBottom: 40,
-    display: 'none'
+    // display: 'none',
   },
   [theme.breakpoints.up('lg')]: {
     display: 'block',
@@ -54,13 +57,13 @@ const ProjectMedia = styled('img')(({theme}) => ({
 
 const ProjectContent = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    width: '85%',
-    padding: 0, 
+    width: '100%',
+    padding: '0', 
     margin: 'auto',
   },
   [theme.breakpoints.up('lg')]: {
-    width: '100%',
-    padding: 0, 
+    width: '1000%',
+    padding: '0', 
     paddingLeft: 80
   },
 }))
@@ -85,16 +88,12 @@ const StackList = styled('div')(({theme}) => ({
   },
 }))
 
-const ButtonLink = styled('button')(({theme}) => ({
+const ButtonTypography = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 12, 
-    width: '155px',
-    height: '35px',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 14, 
-    width: '165px',
-    height: '40px',
   },
 }))
 
@@ -190,7 +189,8 @@ function Project() {
     fontFamily: 'Poppins', 
     p: 0, 
     flexWrap: 'wrap', 
-    pb: 3, color: '#F25F4C' ,
+    pb: 3, 
+    color: '#F25F4C' ,
     lineHeight: 2
   }
 
@@ -203,10 +203,6 @@ function Project() {
   const linkButton = {
     border: 'none',
     background: '#0F0E17',
-    color: '#FCFCFC',
-    textTransform: 'lowercase',
-    fontSize: 14, 
-    fontFamily: 'Poppins',
     width: '165px',
     height: '40px',
     borderRadius: 0,
@@ -215,6 +211,16 @@ function Project() {
       background: '#0F0E17',
       color: '#fcfcfc'
     }
+  }
+
+  const typographyButton = {
+    color: '#FCFCFC',
+    textTransform: 'lowercase',
+    fontSize: 14, 
+    fontFamily: 'Poppins',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 
   return (
@@ -242,8 +248,12 @@ function Project() {
                   <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
                 </StackList>
                 <Box sx={boxB}>
-                  <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>view in behance</Button>
-                  <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>launch app </Button>
+                  <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>
+                    <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
+                  </Button>
+                  <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>
+                    <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
+                  </Button>
                 </Box>
               </ProjectContent>
             </CardItem>

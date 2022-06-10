@@ -63,6 +63,23 @@ const Lists = styled('div')(({theme}) => ({
   },
 }))
 
+const AboutMe = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    padding: '0 0 50px 0'
+  },
+  [theme.breakpoints.up('lg')]: {
+    padding: '30px'
+  },
+}))
+
+const Stacks = styled('div')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    padding: '20px',
+  },
+  [theme.breakpoints.up('lg')]: {
+    padding: '30px'
+  },
+}))
 
 function About() {
 
@@ -150,7 +167,7 @@ function About() {
       <Container>
         <AboutContainer sx={container} id='about'>
           <Box>
-            <Box sx={boxA} >
+            <AboutMe sx={boxA} >
               <TypographyH4 variant='h4' sx={typographyH4} >About Me.</TypographyH4>
               <List>
                 <ListItem sx={aboutmeListA} >
@@ -164,8 +181,8 @@ function About() {
                   </TypographyP>
                 </ListItem>
               </List>
-            </Box>
-            <Box sx={boxB} >
+            </AboutMe>
+            <Stacks sx={boxB} >
               <TypographyP sx={typographyPB} >What I use?</TypographyP>
               <TypographyP variant='paragraph' sx={typographyPA} >
                 I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
@@ -195,7 +212,7 @@ function About() {
                   <ListItem sx={listItem}>NPM</ListItem>
                 </Lists>
               </List>
-            </Box>
+            </Stacks>
           </Box>
           <Box>
             <ProfileImage sx={profile} src={require('../img/profile.avif')}/>

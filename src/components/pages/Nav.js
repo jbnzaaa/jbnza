@@ -79,7 +79,7 @@ function Nav() {
         <AppBar sx={appBar}>
           <Container componet='div' sx={container}>
             <Link to="#">
-              <Logo style={{ width: '50px', display: 'flex', alignItems: 'center' }}/>
+              <Logo style={{ width: '50px', display: 'flex', alignItems: 'center'}}/>
             </Link>
             <NavListLink>
               <List componet='div' sx={navListLink}>

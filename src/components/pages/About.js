@@ -74,7 +74,7 @@ const AboutMe = styled('div')(({theme}) => ({
 
 const Stacks = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    padding: '20px',
+    padding: '40px 20px',
   },
   [theme.breakpoints.up('lg')]: {
     padding: '30px'
@@ -147,7 +147,9 @@ function About() {
   }
 
   const boxC = {
-    display: 'flex'
+    display: 'flex',
+    width: '100%',
+    flexWrap: 'wrap'
   }
 
   const boxD = {

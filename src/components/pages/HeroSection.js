@@ -63,7 +63,8 @@ function HeroSection() {
   const typographyPA = {
     fontSize: 14, 
     fontFamily: 'Poppins' ,
-    textAlign: 'right'
+    textAlign: 'right',
+    color: '#2B2C34'
   }
 
   const typographyPB = {
@@ -71,13 +72,15 @@ function HeroSection() {
     fontFamily: 'Poppins',
     textAlign: 'right',
     mt: 2,
-    lineHeight: 2
+    lineHeight: 2,
+    color: '#2B2C34'
   }
 
   const typographyH1A = {
     fontWeight: 'bold', 
     fontSize: 55, 
-    fontFamily: 'Poppins' 
+    fontFamily: 'Poppins',
+    color: '#0F0E17',
   }
 
   const typographyH1B = {
@@ -123,7 +126,7 @@ function HeroSection() {
           <TypographyH1 variant='h1' sx={typographyH1A}>Jayson Beniza</TypographyH1>
           <TypographyH1 variant='h1' sx={typographyH1B}>I do web design & development.</TypographyH1>
           <TypographyP variant='paragraph' sx={typographyPB}>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</TypographyP>
-          <Button href='' target='' type='application/pdf' sx={viewmoreButton}> 
+          <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> 
           {/* <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> */}
             {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
             <ButtonTypography sx={typographyButton}>download resume</ButtonTypography>

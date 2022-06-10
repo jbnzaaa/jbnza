@@ -10,12 +10,12 @@ const OutlineBG = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     width: '1900px',
     top: '800px',
-    left: '-730px',
+    left: '-740px',
   },
   [theme.breakpoints.up('md')]: {
     width: '1900px',
     top: '800px',
-    left: '-730px',
+    left: '-740px',
   },
   [theme.breakpoints.up('lg')]: {
     top: '1050px',

@@ -28,9 +28,22 @@ const ProfileImage = styled('img')(({theme}) => ({
 const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 12,
+    color: '#2B2C34'
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 14,
+    color: '#2B2C34'
+  },
+}))
+
+const TypographyPs = styled('p')(({theme}) => ({
+  [theme.breakpoints.down('md')]: {
+    fontSize: 12,
+    color: '#FCFCFC'
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 14,
+    color: '#FCFCFC'
   },
 }))
 
@@ -185,10 +198,10 @@ function About() {
               </List>
             </AboutMe>
             <Stacks sx={boxB} >
-              <TypographyP sx={typographyPB} >What I use?</TypographyP>
-              <TypographyP variant='paragraph' sx={typographyPA} >
+              <TypographyPs sx={typographyPB} >What I use?</TypographyPs>
+              <TypographyPs variant='paragraph' sx={typographyPA} >
                 I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
-              </TypographyP>
+              </TypographyPs>
               <List sx={whatIuse} >
                 <TypographyH6 variant='h6' sx={typographyH6} >Graphics Design</TypographyH6>
                 <Lists sx={boxC} >

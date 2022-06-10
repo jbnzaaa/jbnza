@@ -99,9 +99,11 @@ function Footer() {
           <NavFooter sx={container}>
             <TypographyP sx={typographyFooter}>&copy; 2022 Jayson Beniza</TypographyP>
             <FooterBox>
-              <List componet='div'  sx = {footerList}>
+              <List componet='div' sx = {footerList}>
                 <Typography sx={typographyFooter}>jbnzaaa@gmail.com</Typography>
-                <FontAwesomeIcon icon={faMinus} style={footerIcon}/>
+                <Box>
+                  <FontAwesomeIcon icon={faMinus} style={footerIcon}/>
+                </Box>
                 <IconButton href='https://www.facebook.com/jbnzaaa' target='https://www.facebook.com/jbnzaaa' sx={footerButton}>
                   <FontAwesomeIcon icon={faFacebook} sx={footerIcon}/>
                 </IconButton>

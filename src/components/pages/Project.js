@@ -15,29 +15,30 @@ const ProjectContainer = styled('div')(({theme}) => ({
 const TypographyH4 = styled('h4')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 30,
+    color: '#0F0E17',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 35,
+    color: '#0F0E17',
   },
 }))
 
 const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 12,
-    width: '100%'
+    width: '100%',
+    color: '#2B2C34'
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 14,
-    width: '100%'
+    width: '100%',
+    color: '#2B2C34'
   },
 }))
 
 const CardItem = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     display: 'block',
-    // background: '#0F0E17',
-    // color: '#FCFCFC'
-    // padding: '30px',
   },
   [theme.breakpoints.up('lg')]: {
     display: 'flex',
@@ -48,7 +49,6 @@ const ProjectMedia = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     width: '100%',
     marginBottom: 40,
-    // display: 'none',
   },
   [theme.breakpoints.up('lg')]: {
     display: 'block',

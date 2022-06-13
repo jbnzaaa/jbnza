@@ -98,7 +98,7 @@ function Footer() {
       <Box sx={boxA}>
         <Container>
           <NavFooter sx={container}>
-            <Fade bottom delay={200}>
+            <Fade bottom delay={100}>
               <TypographyP sx={typographyFooter}>&copy; 2022 Jayson Beniza</TypographyP>
               <FooterBox>
                 <List componet='div' sx = {footerList}>

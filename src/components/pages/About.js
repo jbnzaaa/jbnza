@@ -180,51 +180,51 @@ function About() {
 
   return (
     <>
-      <Fade bottom>
-        <Container>
-          <AboutContainer sx={container} id='about'>
-            <Box>
-              <AboutMe sx={boxA} >
-                <TypographyH4 variant='h4' sx={typographyH4} >
-                  <Fade bottom delay={200}>
-                    About Me.
-                  </Fade>
-                </TypographyH4>
-                <List>
-                  <ListItem sx={aboutmeListA} >
-                    <TypographyP variant='paragraph' sx={typographyPA} >
-                      <Fade bottom delay={400}>
-                        Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
-                      </Fade>
-                    </TypographyP>
-                  </ListItem>
-                  <ListItem sx={aboutmeListB} >
-                    <TypographyP variant='paragraph' sx={typographyPA} >
-                      <Fade bottom delay={600}>
-                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
-                      </Fade>
-                    </TypographyP>
-                  </ListItem>
-                </List>
-              </AboutMe>
+      <Container>
+        <AboutContainer sx={container} id='about'>
+          <Box>
+            <AboutMe sx={boxA} >
+              <TypographyH4 variant='h4' sx={typographyH4} >
+                <Fade bottom delay={100}>
+                  About Me.
+                </Fade>
+              </TypographyH4>
+              <List>
+                <ListItem sx={aboutmeListA} >
+                  <TypographyP variant='paragraph' sx={typographyPA} >
+                    <Fade bottom delay={150}>
+                      Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                    </Fade>
+                  </TypographyP>
+                </ListItem>
+                <ListItem sx={aboutmeListB} >
+                  <TypographyP variant='paragraph' sx={typographyPA} >
+                    <Fade bottom delay={200}>
+                      My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
+                    </Fade>
+                  </TypographyP>
+                </ListItem>
+              </List>
+            </AboutMe>
+            <Fade bottom delay={250}>
               <Stacks sx={boxB} >
                 <TypographyPs sx={typographyPB} >
-                  <Fade bottom delay={800}>
+                  <Fade bottom delay={100}>
                     What I use?
                   </Fade>
                 </TypographyPs>
                 <TypographyPs variant='paragraph' sx={typographyPA} >
-                  <Fade bottom delay={1000}>
+                  <Fade bottom delay={150}>
                     I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
                   </Fade>
                 </TypographyPs>
                 <List sx={whatIuse} >
                   <TypographyH6 variant='h6' sx={typographyH6} >
-                    <Fade bottom delay={1200}>
+                    <Fade bottom delay={200}>
                       Graphics Design
                     </Fade>
                   </TypographyH6>
-                  <Fade bottom delay={1400}>
+                  <Fade bottom delay={250}>
                     <Lists sx={boxC} >
                       <ListItem sx={listItem}>Adobe Photoshop</ListItem>
                       <ListItem sx={listItem}>Adobe Illustrator</ListItem>
@@ -235,11 +235,11 @@ function About() {
                 </List>
                 <List sx={whatIuseList} >
                   <TypographyH6 variant='h6' sx={typographyH6}>
-                    <Fade bottom delay={1600}>
+                    <Fade bottom delay={300}>
                       Web Development
                     </Fade>
                   </TypographyH6>
-                  <Fade bottom delay={1800}>
+                  <Fade bottom delay={350}>
                     <Lists sx={boxD}>
                       <ListItem sx={listItem}>HTML 5</ListItem>
                       <ListItem sx={listItem}>CSS 3</ListItem>
@@ -256,16 +256,16 @@ function About() {
                   </Fade>
                 </List>
               </Stacks>
-            </Box>
-            <Box>
-              <Fade bottom delay={200}>
-                <ProfileImage sx={profile} src={require('../img/profile.avif')}/>
-              </Fade>
-              {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
-            </Box>
-          </AboutContainer>
-        </Container>
-      </Fade>
+            </Fade>
+          </Box>
+          <Box>
+            <Fade bottom delay={300}>
+              <ProfileImage sx={profile} src={require('../img/profile.avif')}/>
+            </Fade>
+            {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
+          </Box>
+        </AboutContainer>
+      </Container>
     </>
   )
 }

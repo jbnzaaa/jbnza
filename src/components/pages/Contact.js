@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-reveal';
-import { Container, Box, Typography, TextField, Button } from '@mui/material'
+import { Container, Box, TextField, Button } from '@mui/material'
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { GrSend } from 'react-icons/gr'
 
@@ -44,18 +44,18 @@ const InputField = styled('div')(({theme}) => ({
   },
 }))
 
-const SendMessageButton = styled('button')(({theme}) => ({
-  [theme.breakpoints.down('md')]: {
-    width: '150px',
-    height: '40px',
-    fontSize: 12,
-  },
-  [theme.breakpoints.up('lg')]: {
-    width: '190px',
-    height: '50px',
-    fontSize: 14,
-  },
-}))
+// const SendMessageButton = styled('button')(({theme}) => ({
+//   [theme.breakpoints.down('md')]: {
+//     width: '150px',
+//     height: '40px',
+//     fontSize: 12,
+//   },
+//   [theme.breakpoints.up('lg')]: {
+//     width: '190px',
+//     height: '50px',
+//     fontSize: 14,
+//   },
+// }))
 
 function Contact() {
 
@@ -119,23 +119,23 @@ function Contact() {
         <Fade bottom>
           <Container sx={container}>
             <TypographyH4 variant='h4' sx={typographyH4}>
-              <Fade bottom delay={200}>
+              <Fade bottom delay={100}>
                 Let's create progress together.
               </Fade>
             </TypographyH4>
             <TypographyP variant='paragraph' sx={paragraph}>
-              <Fade bottom delay={400}>
+              <Fade bottom delay={150}>
                 If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.
               </Fade>
             </TypographyP>
-            <Fade bottom delay={600}>
+            <Fade bottom delay={200}>
             <InputField sx={boxB}>
               <ThemeProvider theme={theme}>
                 <TextField label='Your Name' variant='standard'color='neutral'sx={textfeild}/>
                 <TextField label='Your Email' variant='standard'color='neutral'sx={textfeild}/>
                 <TextField label='Subject' variant='standard'color='neutral'sx={textfeild}/>
                 <TextField label='Message' variant='standard'color='neutral'sx={textfeild}/>
-                <Fade bottom delay={700}>
+                <Fade bottom delay={200}>
                   <Button sx={sendButton}>
                     send Message
                     <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>

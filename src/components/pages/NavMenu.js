@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container, SwipeableDrawer } from '@mui/material'
+import { Container } from '@mui/material'
 
 const NavMenu = () => {
   return (
     <>
       <Container>
-        asd
+        asdasd
       </Container>
     </>
   )

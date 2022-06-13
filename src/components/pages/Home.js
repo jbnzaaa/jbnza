@@ -1,7 +1,6 @@
 import '../styles/style.css'
 import React from 'react'
 import Nav from './Nav'
-import NavMenu from './NavMenu'
 import HeroSection from './HeroSection'
 // import { ReactComponent as OutlineLogo } from '../img/jbnza_outline_logo.svg'
 
@@ -37,6 +36,7 @@ function Home() {
     <>
       <OutlineBG sx={outlineLogo} src={require('../img/jbnza_outline_logo.png')}/>
       <Nav/>
+      {/* <NavMenu/> */}
       <HeroSection/>
     </>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Typography, Button, Box } from '@mui/material'
+import { Fade } from 'react-reveal'
 
 import { styled } from '@mui/material/styles'
 
@@ -122,15 +123,32 @@ function HeroSection() {
     <>
       <Box componet='div' sx = {containerA}>
         <Container componet='div' sx = {containerB} >
-          <TypographyP variant='paragraph' sx={typographyPA}>Hi, my name is</TypographyP>
-          <TypographyH1 variant='h1' sx={typographyH1A}>Jayson Beniza</TypographyH1>
-          <TypographyH1 variant='h1' sx={typographyH1B}>I do web design & development.</TypographyH1>
-          <TypographyP variant='paragraph' sx={typographyPB}>I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.</TypographyP>
-          <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> 
-          {/* <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> */}
-            {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
-            <ButtonTypography sx={typographyButton}>download resume</ButtonTypography>
-          </Button> 
+          <TypographyP variant='paragraph' sx={typographyPA}>
+            <Fade bottom delay={200}>
+              Hi, my name is
+            </Fade>
+          </TypographyP>
+          <TypographyH1 variant='h1' sx={typographyH1A}>
+            <Fade bottom delay={400}>
+              Jayson Beniza
+            </Fade>
+          </TypographyH1>
+          <TypographyH1 variant='h1' sx={typographyH1B}>
+            <Fade bottom delay={600}>
+              I do web design & development.
+            </Fade>
+          </TypographyH1>
+          <TypographyP variant='paragraph' sx={typographyPB}>
+            <Fade bottom delay={800}>
+              I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.
+            </Fade>
+          </TypographyP>
+          <Fade bottom delay={1000}>
+            <Button href='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' target='https://drive.google.com/file/d/1_9ngXSAMMJzOvAbm2_Dcf5WGtXPvrpM_/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> 
+              {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
+              <ButtonTypography sx={typographyButton}>download resume</ButtonTypography>
+            </Button> 
+          </Fade>
         </Container>
       </Box>
     </>

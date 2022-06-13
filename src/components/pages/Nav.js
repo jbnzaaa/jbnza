@@ -34,10 +34,6 @@ function Nav() {
     background: '#FCFCFC'
   }
 
-  const cardMedia = {
-    width: '40%'
-  }
-
   const container = {
     display: 'flex', 
     justifyContent: 'space-between', 

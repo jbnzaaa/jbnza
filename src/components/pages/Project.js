@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-reveal'
 import { Container, Box, Typography, Card, CardMedia, CardContent, List, ListItem, Button } from '@mui/material'
 
 import { styled } from '@mui/material/styles'
@@ -51,6 +52,7 @@ const ProjectMedia = styled('img')(({theme}) => ({
     marginBottom: 40,
   },
   [theme.breakpoints.up('lg')]: {
+    width: '500px',
     display: 'block',
   },
 }))
@@ -179,7 +181,7 @@ function Project() {
   // }
 
   const cardMedia = {
-    width: '40%'
+    width: '500px'
   }
 
   const stackList = {
@@ -225,41 +227,69 @@ function Project() {
 
   return (
     <>
-      <Container>
-        <ProjectContainer sx={container} id='projects'>
-          <TypographyH4 variant='h4'sx={typographyH4}>Some of the projects I've created.</TypographyH4>
-          <TypographyP variant='paragraph'sx={paragraphA}>This is a collection of projects I've worked on as a user interface designer and web developer.</TypographyP>
-          <Box sx={boxA}>
-            <CardItem sx={cardA}>
-              <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
-              <ProjectContent sx={cardContentA}>
-                <TypographySpan variant='paragraph' sx={paragraphB}>Web Project</TypographySpan>
-                <TypographyH4 variant='h4' sx={typographyH4}>ReGain</TypographyH4>
-                <TypographyP variant='paragraph' sx={TypographyC}>A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.</TypographyP>
-                <StackList sx={stackList}>
-                  <ListItem sx={stackItem}>HTML</ListItem>
-                  <ListItem sx={stackItem}>CSS</ListItem>
-                  <ListItem sx={stackItem}>SASS</ListItem>
-                  <ListItem sx={stackItem}>JavaScript</ListItem>
-                  <ListItem sx={stackItem}>JQuery</ListItem>
-                  <ListItem sx={stackItem}>Bootstrap</ListItem>
-                  <ListItem sx={stackItem}>NodeJS</ListItem>
-                  <ListItem sx={stackItem}>Firebase</ListItem>
-                  <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
-                </StackList>
-                <Box sx={boxB}>
-                  <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>
-                    <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
-                  </Button>
-                  <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>
-                    <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
-                  </Button>
-                </Box>
-              </ProjectContent>
-            </CardItem>
-          </Box>
-        </ProjectContainer>
-      </Container>
+      {/* <Fade bottom> */}
+        <Container>
+          <ProjectContainer sx={container} id='projects'>
+            <TypographyH4 variant='h4'sx={typographyH4}>
+              <Fade bottom delay={200}>
+                Some of the projects I've created.
+              </Fade>
+            </TypographyH4>
+            <TypographyP variant='paragraph'sx={paragraphA}>
+              <Fade bottom delay={400}>
+                This is a collection of projects I've worked on as a user interface designer and web developer.
+              </Fade>
+            </TypographyP>
+            <Box sx={boxA}>
+              <CardItem sx={cardA}>
+                <Fade left delay={50}>
+                  <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
+                </Fade>
+                <ProjectContent sx={cardContentA}>
+                  <TypographySpan variant='paragraph' sx={paragraphB}>
+                    <Fade bottom delay={200}>
+                      Web Project
+                    </Fade>
+                  </TypographySpan>
+                  <TypographyH4 variant='h4' sx={typographyH4}>
+                    <Fade bottom delay={400}>
+                      ReGain
+                    </Fade>
+                  </TypographyH4>
+                  <TypographyP variant='paragraph' sx={TypographyC}>
+                    <Fade bottom delay={600}>
+                      A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
+                    </Fade>
+                  </TypographyP>
+                  <Fade bottom delay={800}>
+                    <StackList sx={stackList}>
+                      <ListItem sx={stackItem}>HTML</ListItem>
+                      <ListItem sx={stackItem}>CSS</ListItem>
+                      <ListItem sx={stackItem}>SASS</ListItem>
+                      <ListItem sx={stackItem}>JavaScript</ListItem>
+                      <ListItem sx={stackItem}>JQuery</ListItem>
+                      <ListItem sx={stackItem}>Bootstrap</ListItem>
+                      <ListItem sx={stackItem}>NodeJS</ListItem>
+                      <ListItem sx={stackItem}>Firebase</ListItem>
+                      <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
+                    </StackList>
+                  </Fade>
+                  <Fade bottom delay={1000}>
+                    <Box sx={boxB}>
+                      <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>
+                        <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
+                      </Button>
+                      <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>
+                        <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
+                      </Button>
+                    </Box>
+                  </Fade>
+                </ProjectContent>
+              </CardItem>
+            </Box>
+          </ProjectContainer>
+        </Container>
+      {/* </Fade> */}
     </>
   )
 }

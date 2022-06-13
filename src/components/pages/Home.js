@@ -1,6 +1,7 @@
 import '../styles/style.css'
 import React from 'react'
 import Nav from './Nav'
+import NavMenu from './NavMenu'
 import HeroSection from './HeroSection'
 // import { ReactComponent as OutlineLogo } from '../img/jbnza_outline_logo.svg'
 
@@ -8,11 +9,6 @@ import { styled } from '@mui/material/styles'
 
 const OutlineBG = styled('img')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    width: '1900px',
-    top: '800px',
-    left: '-740px',
-  },
-  [theme.breakpoints.up('md')]: {
     width: '1900px',
     top: '800px',
     left: '-740px',
@@ -32,8 +28,9 @@ function Home() {
     top: '1050px',
     left: '-830px',
     zIndex: '-1',
-    width: '2500px',
+    width: '2800px',
     opacity: '.05',
+    overflow: 'hidden',
   }
 
   return (

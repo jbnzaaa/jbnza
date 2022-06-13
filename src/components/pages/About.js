@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-reveal';
 import { Container, Box, Typography, List, ListItem } from '@mui/material'
 
 import { styled } from '@mui/material/styles'
@@ -179,62 +180,92 @@ function About() {
 
   return (
     <>
-      <Container>
-        <AboutContainer sx={container} id='about'>
-          <Box>
-            <AboutMe sx={boxA} >
-              <TypographyH4 variant='h4' sx={typographyH4} >About Me.</TypographyH4>
-              <List>
-                <ListItem sx={aboutmeListA} >
-                  <TypographyP variant='paragraph' sx={typographyPA} >
-                    Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
-                  </TypographyP>
-                </ListItem>
-                <ListItem sx={aboutmeListB} >
-                  <TypographyP variant='paragraph' sx={typographyPA} >
-                    My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
-                  </TypographyP>
-                </ListItem>
-              </List>
-            </AboutMe>
-            <Stacks sx={boxB} >
-              <TypographyPs sx={typographyPB} >What I use?</TypographyPs>
-              <TypographyPs variant='paragraph' sx={typographyPA} >
-                I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
-              </TypographyPs>
-              <List sx={whatIuse} >
-                <TypographyH6 variant='h6' sx={typographyH6} >Graphics Design</TypographyH6>
-                <Lists sx={boxC} >
-                  <ListItem sx={listItem}>Adobe Photoshop</ListItem>
-                  <ListItem sx={listItem}>Adobe Illustrator</ListItem>
-                  <ListItem sx={listItem}>Adobe Xd</ListItem>
-                  <ListItem sx={listItem}>Figma</ListItem>
-                </Lists>
-              </List>
-              <List sx={whatIuseList} >
-                <TypographyH6 variant='h6' sx={typographyH6}>Web Development</TypographyH6>
-                <Lists sx={boxD}>
-                  <ListItem sx={listItem}>HTML 5</ListItem>
-                  <ListItem sx={listItem}>CSS 3</ListItem>
-                  <ListItem sx={listItem}>SASS</ListItem>
-                  <ListItem sx={listItem}>Bootstrap</ListItem>
-                  <ListItem sx={listItem}>JavaScript</ListItem>
-                  <ListItem sx={listItem}>JQuery</ListItem>
-                  <ListItem sx={listItem}>ReactJS</ListItem>
-                  <ListItem sx={listItem}>MySQL</ListItem>
-                  <ListItem sx={listItem}>Firebase</ListItem>
-                  <ListItem sx={listItem}>NodeJS</ListItem>
-                  <ListItem sx={listItem}>NPM</ListItem>
-                </Lists>
-              </List>
-            </Stacks>
-          </Box>
-          <Box>
-            <ProfileImage sx={profile} src={require('../img/profile.avif')}/>
-            {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
-          </Box>
-        </AboutContainer>
-      </Container>
+      <Fade bottom>
+        <Container>
+          <AboutContainer sx={container} id='about'>
+            <Box>
+              <AboutMe sx={boxA} >
+                <TypographyH4 variant='h4' sx={typographyH4} >
+                  <Fade bottom delay={200}>
+                    About Me.
+                  </Fade>
+                </TypographyH4>
+                <List>
+                  <ListItem sx={aboutmeListA} >
+                    <TypographyP variant='paragraph' sx={typographyPA} >
+                      <Fade bottom delay={400}>
+                        Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                      </Fade>
+                    </TypographyP>
+                  </ListItem>
+                  <ListItem sx={aboutmeListB} >
+                    <TypographyP variant='paragraph' sx={typographyPA} >
+                      <Fade bottom delay={600}>
+                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
+                      </Fade>
+                    </TypographyP>
+                  </ListItem>
+                </List>
+              </AboutMe>
+              <Stacks sx={boxB} >
+                <TypographyPs sx={typographyPB} >
+                  <Fade bottom delay={800}>
+                    What I use?
+                  </Fade>
+                </TypographyPs>
+                <TypographyPs variant='paragraph' sx={typographyPA} >
+                  <Fade bottom delay={1000}>
+                    I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
+                  </Fade>
+                </TypographyPs>
+                <List sx={whatIuse} >
+                  <TypographyH6 variant='h6' sx={typographyH6} >
+                    <Fade bottom delay={1200}>
+                      Graphics Design
+                    </Fade>
+                  </TypographyH6>
+                  <Fade bottom delay={1400}>
+                    <Lists sx={boxC} >
+                      <ListItem sx={listItem}>Adobe Photoshop</ListItem>
+                      <ListItem sx={listItem}>Adobe Illustrator</ListItem>
+                      <ListItem sx={listItem}>Adobe Xd</ListItem>
+                      <ListItem sx={listItem}>Figma</ListItem>
+                    </Lists>
+                  </Fade>
+                </List>
+                <List sx={whatIuseList} >
+                  <TypographyH6 variant='h6' sx={typographyH6}>
+                    <Fade bottom delay={1600}>
+                      Web Development
+                    </Fade>
+                  </TypographyH6>
+                  <Fade bottom delay={1800}>
+                    <Lists sx={boxD}>
+                      <ListItem sx={listItem}>HTML 5</ListItem>
+                      <ListItem sx={listItem}>CSS 3</ListItem>
+                      <ListItem sx={listItem}>SASS</ListItem>
+                      <ListItem sx={listItem}>Bootstrap</ListItem>
+                      <ListItem sx={listItem}>JavaScript</ListItem>
+                      <ListItem sx={listItem}>JQuery</ListItem>
+                      <ListItem sx={listItem}>ReactJS</ListItem>
+                      <ListItem sx={listItem}>MySQL</ListItem>
+                      <ListItem sx={listItem}>Firebase</ListItem>
+                      <ListItem sx={listItem}>NodeJS</ListItem>
+                      <ListItem sx={listItem}>NPM</ListItem>
+                    </Lists>
+                  </Fade>
+                </List>
+              </Stacks>
+            </Box>
+            <Box>
+              <Fade bottom delay={200}>
+                <ProfileImage sx={profile} src={require('../img/profile.avif')}/>
+              </Fade>
+              {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
+            </Box>
+          </AboutContainer>
+        </Container>
+      </Fade>
     </>
   )
 }

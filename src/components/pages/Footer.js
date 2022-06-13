@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-reveal';
 import { Container, Box, Typography, List, IconButton } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faGithub, faBehance, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -97,30 +98,32 @@ function Footer() {
       <Box sx={boxA}>
         <Container>
           <NavFooter sx={container}>
-            <TypographyP sx={typographyFooter}>&copy; 2022 Jayson Beniza</TypographyP>
-            <FooterBox>
-              <List componet='div' sx = {footerList}>
-                <Typography sx={typographyFooter}>jbnzaaa@gmail.com</Typography>
-                <Box>
-                  <FontAwesomeIcon icon={faMinus} style={footerIcon}/>
-                </Box>
-                <IconButton href='https://www.facebook.com/jbnzaaa' target='https://www.facebook.com/jbnzaaa' sx={footerButton}>
-                  <FontAwesomeIcon icon={faFacebook} sx={footerIcon}/>
-                </IconButton>
-                <IconButton href='https://www.instagram.com/jbnza_/?hl=en' target='https://www.instagram.com/jbnza_/?hl=en' sx={footerButton}>
-                  <FontAwesomeIcon icon={faInstagram} sx={footerIcon}/>
-                </IconButton>
-                <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={footerButton}>
-                  <FontAwesomeIcon icon={faGithub} sx={footerIcon}/>
-                </IconButton>
-                <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={footerButton}>
-                  <FontAwesomeIcon icon={faBehance} sx={footerIcon}/>
-                </IconButton>
-                <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={footerButton}>
-                  <FontAwesomeIcon icon={faLinkedinIn} sx={footerIcon}/>
-                </IconButton>
-              </List>
-            </FooterBox>
+            <Fade bottom delay={200}>
+              <TypographyP sx={typographyFooter}>&copy; 2022 Jayson Beniza</TypographyP>
+              <FooterBox>
+                <List componet='div' sx = {footerList}>
+                  <Typography sx={typographyFooter}>jbnzaaa@gmail.com</Typography>
+                  <Box>
+                    <FontAwesomeIcon icon={faMinus} style={footerIcon}/>
+                  </Box>
+                  <IconButton href='https://www.facebook.com/jbnzaaa' target='https://www.facebook.com/jbnzaaa' sx={footerButton}>
+                    <FontAwesomeIcon icon={faFacebook} sx={footerIcon}/>
+                  </IconButton>
+                  <IconButton href='https://www.instagram.com/jbnza_/?hl=en' target='https://www.instagram.com/jbnza_/?hl=en' sx={footerButton}>
+                    <FontAwesomeIcon icon={faInstagram} sx={footerIcon}/>
+                  </IconButton>
+                  <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={footerButton}>
+                    <FontAwesomeIcon icon={faGithub} sx={footerIcon}/>
+                  </IconButton>
+                  <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={footerButton}>
+                    <FontAwesomeIcon icon={faBehance} sx={footerIcon}/>
+                  </IconButton>
+                  <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={footerButton}>
+                    <FontAwesomeIcon icon={faLinkedinIn} sx={footerIcon}/>
+                  </IconButton>
+                </List>
+              </FooterBox>
+            </Fade>
           </NavFooter>
         </Container>
       </Box>

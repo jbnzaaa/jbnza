@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-reveal';
 import { Container, Box, Typography, TextField, Button } from '@mui/material'
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { GrSend } from 'react-icons/gr'
@@ -115,22 +116,36 @@ function Contact() {
   return (
     <>
       <Box sx={boxA} id='contact'>
-        <Container sx={container}>
-          <TypographyH4 variant='h4' sx={typographyH4}>Let's create progress together.</TypographyH4>
-          <TypographyP variant='paragraph' sx={paragraph}>If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.  </TypographyP>
-          <InputField sx={boxB}>
-            <ThemeProvider theme={theme}>
-              <TextField label='Your Name' variant='standard'color='neutral'sx={textfeild}/>
-              <TextField label='Your Email' variant='standard'color='neutral'sx={textfeild}/>
-              <TextField label='Subject' variant='standard'color='neutral'sx={textfeild}/>
-              <TextField label='Message' variant='standard'color='neutral'sx={textfeild}/>
-              <Button sx={sendButton}>
-                send Message
-                <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
-              </Button>
-            </ThemeProvider>
-          </InputField>
-        </Container>
+        <Fade bottom>
+          <Container sx={container}>
+            <TypographyH4 variant='h4' sx={typographyH4}>
+              <Fade bottom delay={200}>
+                Let's create progress together.
+              </Fade>
+            </TypographyH4>
+            <TypographyP variant='paragraph' sx={paragraph}>
+              <Fade bottom delay={400}>
+                If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.
+              </Fade>
+            </TypographyP>
+            <Fade bottom delay={600}>
+            <InputField sx={boxB}>
+              <ThemeProvider theme={theme}>
+                <TextField label='Your Name' variant='standard'color='neutral'sx={textfeild}/>
+                <TextField label='Your Email' variant='standard'color='neutral'sx={textfeild}/>
+                <TextField label='Subject' variant='standard'color='neutral'sx={textfeild}/>
+                <TextField label='Message' variant='standard'color='neutral'sx={textfeild}/>
+                <Fade bottom delay={700}>
+                  <Button sx={sendButton}>
+                    send Message
+                    <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
+                  </Button>
+                </Fade>
+              </ThemeProvider>
+            </InputField>
+            </Fade>
+          </Container>
+        </Fade>
       </Box>
     </>
   )

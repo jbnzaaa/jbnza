@@ -123,7 +123,7 @@ function HeroSection() {
     <>
       <Box sx = {containerA}>
         <Container sx = {containerB} >
-          <TypographyP variant='paragraph' sx={typographyPA}>
+          <TypographyP variant='body1' sx={typographyPA}>
             <Fade bottom delay={100}>
               Hi, my name is
             </Fade>
@@ -138,7 +138,7 @@ function HeroSection() {
               I do web design & development.
             </Fade>
           </TypographyH1>
-          <TypographyP variant='paragraph' sx={typographyPB}>
+          <TypographyP variant='body1' sx={typographyPB}>
             <Fade bottom delay={200}>
               I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.
             </Fade>

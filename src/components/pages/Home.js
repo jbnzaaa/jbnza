@@ -36,7 +36,6 @@ function Home() {
     <>
       <OutlineBG sx={outlineLogo} src={require('../img/jbnza_outline_logo.png')}/>
       <Nav/>
-      {/* <NavMenu/> */}
       <HeroSection/>
     </>
   )

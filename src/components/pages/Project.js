@@ -234,7 +234,7 @@ function Project() {
               Some of the projects I've created.
             </Fade>
           </TypographyH4>
-          <TypographyP variant='paragraph'sx={paragraphA}>
+          <TypographyP variant='body1'sx={paragraphA}>
             <Fade bottom delay={150}>
               This is a collection of projects I've worked on as a user interface designer and web developer.
             </Fade>
@@ -245,7 +245,7 @@ function Project() {
                 <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
               </Fade>
               <ProjectContent sx={cardContentA}>
-                <TypographySpan variant='paragraph' sx={paragraphB}>
+                <TypographySpan variant='body1' sx={paragraphB}>
                   <Fade bottom delay={150}>
                     Web Project
                   </Fade>
@@ -255,7 +255,7 @@ function Project() {
                     ReGain
                   </Fade>
                 </TypographyH4>
-                <TypographyP variant='paragraph' sx={TypographyC}>
+                <TypographyP variant='body1' sx={TypographyC}>
                   <Fade bottom delay={250}>
                     A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
                   </Fade>

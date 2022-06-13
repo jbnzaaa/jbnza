@@ -123,7 +123,7 @@ function Contact() {
                 Let's create progress together.
               </Fade>
             </TypographyH4>
-            <TypographyP variant='paragraph' sx={paragraph}>
+            <TypographyP variant='body1' sx={paragraph}>
               <Fade bottom delay={150}>
                 If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.
               </Fade>

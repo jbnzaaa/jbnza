@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
+import { Fade } from 'react-reveal'
 import { ReactComponent as InitialLogo } from '../img/jbnza_initial_logo_dark.svg'
 import { ReactComponent as FullNameLogo } from '../img/jbnza_full_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -179,48 +180,50 @@ function Nav() {
                     <FontAwesomeIcon icon={faBars} />
                   </IconButton>
                   <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)} >
-                    <Box role="presentation" onClick={toggleDrawer(anchor, false)} onKeyDown={toggleDrawer(anchor, false)} >
-                      <List sx={navMenuList}>
-                        <Container>
-                          <ListItem sx={listItemLogo} disablePadding >
-                            <Link to="#">
-                              <FullNameLogo style={{ width: '120px', display: 'flex', alignItems: 'center'}}/>
-                            </Link>
-                            <IconButton sx={navButton}>
-                              <FontAwesomeIcon icon={faX} />
-                            </IconButton>
-                          </ListItem>
+                    <Fade top>
+                      <Box role="presentation" onClick={toggleDrawer(anchor, false)} onKeyDown={toggleDrawer(anchor, false)} >
+                        <List sx={navMenuList}>
+                          <Container>
+                            <ListItem sx={listItemLogo} disablePadding >
+                              <Link to="#">
+                                <FullNameLogo style={{ width: '120px', display: 'flex', alignItems: 'center'}}/>
+                              </Link>
+                              <IconButton sx={navButton}>
+                                <FontAwesomeIcon icon={faX} />
+                              </IconButton>
+                            </ListItem>
 
-                          <ListItem sx={listItemLinks} disablePadding >
-                            <Link to='#' style={navMenuLink}>Home</Link>
-                            <Link to='#projects' style={navMenuLink}>Projects</Link>
-                            <Link to='#about' style={navMenuLink}>About</Link>
-                            <Link to='#contact' style={navMenuLink}>Contact</Link>
-                          </ListItem>
-                          
-                          <ListItem sx={listItemSocial} disablePadding >
-                            <Typography sx={typographyFooter}>&copy; 2022 Jayson Beniza</Typography>
-                            <Box sx={{paddingBottom: '10px'}}>
-                              <IconButton href='https://www.facebook.com/jbnzaaa' target='https://www.facebook.com/jbnzaaa' sx={navButton}>
-                                <FontAwesomeIcon icon={faFacebook}/>
-                              </IconButton>
-                              <IconButton href='https://www.instagram.com/jbnza_/?hl=en' target='https://www.instagram.com/jbnza_/?hl=en' sx={navButton}>
-                                <FontAwesomeIcon icon={faInstagram}/>
-                              </IconButton>
-                              <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={navButton}>
-                                <FontAwesomeIcon icon={faGithub}/>
-                              </IconButton>
-                              <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={navButton}>
-                                <FontAwesomeIcon icon={faBehance}/>
-                              </IconButton>
-                              <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={navButton}>
-                                <FontAwesomeIcon icon={faLinkedinIn}/>
-                              </IconButton>
-                            </Box>
-                          </ListItem>
-                        </Container>
-                      </List>
-                    </Box>
+                            <ListItem sx={listItemLinks} disablePadding >
+                              <Link to='#' style={navMenuLink}>Home</Link>
+                              <Link to='#projects' style={navMenuLink}>Projects</Link>
+                              <Link to='#about' style={navMenuLink}>About</Link>
+                              <Link to='#contact' style={navMenuLink}>Contact</Link>
+                            </ListItem>
+                            
+                            <ListItem sx={listItemSocial} disablePadding >
+                              <Typography sx={typographyFooter}>&copy; 2022 Jayson Beniza</Typography>
+                              <Box sx={{paddingBottom: '10px'}}>
+                                <IconButton href='https://www.facebook.com/jbnzaaa' target='https://www.facebook.com/jbnzaaa' sx={navButton}>
+                                  <FontAwesomeIcon icon={faFacebook}/>
+                                </IconButton>
+                                <IconButton href='https://www.instagram.com/jbnza_/?hl=en' target='https://www.instagram.com/jbnza_/?hl=en' sx={navButton}>
+                                  <FontAwesomeIcon icon={faInstagram}/>
+                                </IconButton>
+                                <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={navButton}>
+                                  <FontAwesomeIcon icon={faGithub}/>
+                                </IconButton>
+                                <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={navButton}>
+                                  <FontAwesomeIcon icon={faBehance}/>
+                                </IconButton>
+                                <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={navButton}>
+                                  <FontAwesomeIcon icon={faLinkedinIn}/>
+                                </IconButton>
+                              </Box>
+                            </ListItem>
+                          </Container>
+                        </List>
+                      </Box>
+                    </Fade>
                   </Drawer>
                 </Box>
               ))}

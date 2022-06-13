@@ -141,7 +141,7 @@ function Nav() {
     flexDirection: "column-reverse", 
     justifyContent: 'end', 
     alignItems: 'center', 
-    height: '20vh'
+    height: '18vh'
   }
 
   return (

@@ -112,10 +112,10 @@ function Footer() {
                   <IconButton href='https://www.instagram.com/jbnza_/?hl=en' target='https://www.instagram.com/jbnza_/?hl=en' sx={footerButton}>
                     <FontAwesomeIcon icon={faInstagram} sx={footerIcon}/>
                   </IconButton>
-                  <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={footerButton}>
+                  <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={footerButton}>
                     <FontAwesomeIcon icon={faGithub} sx={footerIcon}/>
                   </IconButton>
-                  <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={footerButton}>
+                  <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={footerButton}>
                     <FontAwesomeIcon icon={faBehance} sx={footerIcon}/>
                   </IconButton>
                   <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={footerButton}>

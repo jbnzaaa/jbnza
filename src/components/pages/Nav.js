@@ -209,10 +209,10 @@ function Nav() {
                                 <IconButton href='https://www.instagram.com/jbnza_/?hl=en' target='https://www.instagram.com/jbnza_/?hl=en' sx={navButton}>
                                   <FontAwesomeIcon icon={faInstagram}/>
                                 </IconButton>
-                                <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={navButton}>
+                                <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={navButton}>
                                   <FontAwesomeIcon icon={faGithub}/>
                                 </IconButton>
-                                <IconButton href='https://github.com/jbnzaaa' target='https://github.com/jbnzaaa' sx={navButton}>
+                                <IconButton href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' sx={navButton}>
                                   <FontAwesomeIcon icon={faBehance}/>
                                 </IconButton>
                                 <IconButton href='https://www.linkedin.com/in/jaybeniza/' target='https://www.linkedin.com/in/jaybeniza/' sx={navButton}>

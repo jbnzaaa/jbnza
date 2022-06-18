@@ -102,7 +102,7 @@ function Footer() {
               <TypographyP sx={typographyFooter}>&copy; 2022 Jayson Beniza</TypographyP>
               <FooterBox>
                 <List componet='div' sx = {footerList}>
-                  <Typography sx={typographyFooter}>jbnzaaa@gmail.com</Typography>
+                  <Typography sx={typographyFooter}>jaysonbeniza@gmail.com</Typography>
                   <Box>
                     <FontAwesomeIcon icon={faMinus} style={footerIcon}/>
                   </Box>

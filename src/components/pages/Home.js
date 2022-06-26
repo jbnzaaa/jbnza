@@ -14,7 +14,7 @@ const OutlineBG = styled('img')(({theme}) => ({
   },
   [theme.breakpoints.up('lg')]: {
     top: '1050px',
-    left: '-830px',
+    right: '-790px',
     width: '2500px',
   },
 }))
@@ -22,13 +22,13 @@ const OutlineBG = styled('img')(({theme}) => ({
 function Home() {
 
   const outlineLogo = {  
-    transform: 'rotate(90deg)',
+    transform: 'rotate(-90deg)',
     position: 'absolute',
-    top: '1050px',
-    left: '-830px',
+    top: '1040px',
+    right: '-790px',
     zIndex: '-1',
-    width: '2800px',
-    opacity: '.05',
+    width: '2500px',
+    opacity: '.06',
     overflow: 'hidden',
   }
 

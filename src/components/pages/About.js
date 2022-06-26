@@ -122,7 +122,8 @@ function About() {
     fontSize: 14,
     fontWeight: 600,
     fontFamily: 'Poppins',
-    mt: 1
+    mt: 1,
+    color: '#FCFCFC'
   }
 
   const typographyPA = {
@@ -184,46 +185,46 @@ function About() {
         <AboutContainer sx={container} id='about'>
           <Box>
             <AboutMe sx={boxA} >
-              <TypographyH4 variant='h4' sx={typographyH4} >
-                <Fade bottom delay={100}>
-                  About Me.
-                </Fade>
-              </TypographyH4>
+              <Fade bottom delay={100}>
+                <TypographyH4 variant='h4' sx={typographyH4} >
+                    About Me.
+                </TypographyH4>
+              </Fade>
               <List>
                 <ListItem sx={aboutmeListA} >
-                  <TypographyP variant='body1' sx={typographyPA} >
-                    <Fade bottom delay={150}>
-                      Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
-                    </Fade>
-                  </TypographyP>
+                  <Fade bottom delay={150}>
+                    <TypographyP variant='body1' sx={typographyPA} >
+                        Hi! I’m Jayson Beniza I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                    </TypographyP>
+                  </Fade>
                 </ListItem>
                 <ListItem sx={aboutmeListB} >
-                  <TypographyP variant='body1' sx={typographyPA} >
-                    <Fade bottom delay={200}>
-                      My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
-                    </Fade>
-                  </TypographyP>
+                  <Fade bottom delay={200}>
+                    <TypographyP variant='body1' sx={typographyPA} >
+                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
+                    </TypographyP>
+                  </Fade>
                 </ListItem>
               </List>
             </AboutMe>
             <Fade bottom delay={250}>
               <Stacks sx={boxB} >
-                <TypographyPs sx={typographyPB} >
-                  <Fade bottom delay={100}>
-                    What I use?
-                  </Fade>
-                </TypographyPs>
-                <TypographyPs variant='body1' sx={typographyPA} >
-                  <Fade bottom delay={150}>
-                    I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
-                  </Fade>
-                </TypographyPs>
+                <Fade bottom delay={100}>
+                  <TypographyPs sx={typographyPB} >
+                      What I use?
+                  </TypographyPs>
+                </Fade>
+                <Fade bottom delay={150}>
+                  <TypographyPs variant='body1' sx={typographyPA} >
+                      I’ve been utilizing in producing user interface designs, wireframing, prototyping, visual design, and develop website or application. The tools and technologies listed below are those that I have used and am familiar with.
+                  </TypographyPs>
+                </Fade>
                 <List sx={whatIuse} >
-                  <TypographyH6 variant='h6' sx={typographyH6} >
-                    <Fade bottom delay={200}>
-                      Graphics Design
-                    </Fade>
-                  </TypographyH6>
+                  <Fade bottom delay={200}>
+                    <TypographyH6 variant='h6' sx={typographyH6} >
+                        Graphics Design
+                    </TypographyH6>
+                  </Fade>
                   <Fade bottom delay={250}>
                     <Lists sx={boxC} >
                       <ListItem sx={listItem}>Adobe Photoshop</ListItem>
@@ -234,11 +235,11 @@ function About() {
                   </Fade>
                 </List>
                 <List sx={whatIuseList} >
-                  <TypographyH6 variant='h6' sx={typographyH6}>
-                    <Fade bottom delay={300}>
-                      Web Development
-                    </Fade>
-                  </TypographyH6>
+                  <Fade bottom delay={300}>
+                    <TypographyH6 variant='h6' sx={typographyH6}>
+                        Web Development
+                    </TypographyH6>
+                  </Fade>
                   <Fade bottom delay={350}>
                     <Lists sx={boxD}>
                       <ListItem sx={listItem}>HTML 5</ListItem>

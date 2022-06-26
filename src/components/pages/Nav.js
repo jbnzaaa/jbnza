@@ -76,7 +76,7 @@ function Nav() {
   const navLink = {
     mx: 2,
     fontSize: 14, 
-    fontWeight: 600,
+    fontWeight: 400,
     textDecoration: 'none', 
     color: '#0F0E17',
   }
@@ -147,17 +147,17 @@ function Nav() {
   return (
     <>
       <BrowserRouter>
-        <AppBar sx={appBar}>
+        <AppBar sx={appBar} position='sticky'>
           <Container componet='div' sx={container}>
             <Link to="#">
               <InitialLogo style={{ width: '50px', display: 'flex', alignItems: 'center'}}/>
             </Link>
             <NavListLink>
               <List componet='div' sx={navListLink}>
-                <Link to='#' style={navLink}>Home</Link>
-                <Link to='#projects' style={navLink}>Projects</Link>
-                <Link to='#about' style={navLink}>About</Link>
-                <Link to='#contact' style={navLink}>Contact</Link>
+                <Link to='/#' style={navLink}>Home</Link>
+                <Link to='/#projects' style={navLink}>Projects</Link>
+                <Link to='/#about' style={navLink}>About</Link>
+                <Link to='/#contact' style={navLink}>Contact</Link>
               </List>
             </NavListLink>
             <NavSocialLink>

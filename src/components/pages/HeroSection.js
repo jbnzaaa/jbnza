@@ -1,8 +1,11 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import { Container, Button, Box } from '@mui/material'
 import { Fade } from 'react-reveal'
 
 import { styled } from '@mui/material/styles'
+import { width } from '@mui/system'
 
 // const HeroContainer = styled('div')(({theme}) => ({
 //   [theme.breakpoints.down('md')]: {
@@ -20,18 +23,19 @@ import { styled } from '@mui/material/styles'
 
 const TypographyP = styled('p')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
-    fontSize: 12, 
-    width: '85%',
+    fontSize: 14, 
+    width: '100%',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 14, 
-    width: '50%',
+    width: '70%',
   },
 }))
 
 const TypographyH1 = styled('h1')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     fontSize: 40, 
+    textAlign: 'left'
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: 55, 
@@ -58,20 +62,21 @@ function HeroSection() {
   const containerB = {
     display: 'flex',  
     flexDirection: 'column', 
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
   }
 
   const typographyPA = {
     fontSize: 14, 
     fontFamily: 'Poppins' ,
-    textAlign: 'right',
-    color: '#2B2C34'
+    textAlign: 'left',
+    color: '#2B2C34',
+    width: '100% !important'
   }
 
   const typographyPB = {
     fontSize: 14, 
     fontFamily: 'Poppins',
-    textAlign: 'right',
+    textAlign: 'left',
     mt: 2,
     lineHeight: 2,
     color: '#2B2C34'
@@ -89,16 +94,20 @@ function HeroSection() {
     fontSize: 50, 
     color: '#FF8906', 
     fontFamily: 'Poppins',
-    textAlign: 'right'
+    textAlign: 'right',
   }
 
-  const viewmoreButton = {
+  const buttonContainer = {
+    display: 'flex',
+    marginTop: '55px'
+  }
+
+  const viewmoreWork = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     textDecoration: 'none',
     background: '#0F0E17',
-    marginTop: 2,
     width: '170px',
     height: '50px',
     borderRadius: 0,
@@ -109,48 +118,91 @@ function HeroSection() {
     }
   }
 
-  const typographyButton = {
+  const typographyViewWork = {
     color: '#FCFCFC',
     textTransform: 'lowercase',
     fontSize: 14, 
     fontFamily: 'Poppins',
+    textDecoration: 'none',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    width: '100%',
+    height: '100%',
+  }
+
+  const viewmoreResume = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: 'none',
+    background: 'none',
+    width: '170px',
+    height: '50px',
+    borderRadius: 0,
+    border: '2px solid #0F0E17',
+    marginLeft: '10px',
+    '&:hover': {
+      background: '#FCFCFC',
+      color: '#FCFCFC',
+    }
+  }
+  
+  const typographyViewResume = {
+    color: '#0F0E17',
+    textTransform: 'lowercase',
+    fontSize: 14, 
+    fontFamily: 'Poppins',
+    textAlign: 'center',
+    textDecoration: 'none',
+    fontWeight: '600',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: '100%',
   }
 
   return (
     <>
-      <Box sx = {containerA}>
-        <Container sx = {containerB} >
-          <TypographyP variant='body1' sx={typographyPA}>
+      <BrowserRouter>
+        <Box sx = {containerA}>
+          <Container sx = {containerB} >
             <Fade bottom delay={100}>
-              Hi, my name is
+              <TypographyP variant='body1' sx={typographyPA}>
+                  Hi, my name is
+              </TypographyP>
             </Fade>
-          </TypographyP>
-          <TypographyH1 variant='h1' sx={typographyH1A}>
             <Fade bottom delay={100}>
-              Jayson Beniza
+              <TypographyH1 variant='h1' sx={typographyH1A}>
+                  Jayson Beniza
+              </TypographyH1>
             </Fade>
-          </TypographyH1>
-          <TypographyH1 variant='h1' sx={typographyH1B}>
             <Fade bottom delay={150}>
-              I do web design & development.
+              <TypographyH1 variant='h1' sx={typographyH1B}>
+                  I do web design & development.
+              </TypographyH1>
             </Fade>
-          </TypographyH1>
-          <TypographyP variant='body1' sx={typographyPB}>
             <Fade bottom delay={200}>
-              I'm a passionate user interface designer who aspires to build outstanding user interface designs that meet and surpass user expectations.
+              <TypographyP variant='body1' sx={typographyPB}>
+                  {/* I'm a passionate user interface designer based in Philippines who aspires to build outstanding user interface designs that meet and surpass user expectations. */}
+                  I'm an enthusiastic user interface designer and front-end wev developer based in the Philippines. I strive to create amazing user interface designs that go above and beyond what users expect.
+              </TypographyP>
             </Fade>
-          </TypographyP>
-          <Fade bottom delay={250}>
-            <Button href='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' target='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' type='application/pdf' sx={viewmoreButton}> 
-              {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
-              <ButtonTypography sx={typographyButton}>download resume</ButtonTypography>
-            </Button> 
-          </Fade>
-        </Container>
-      </Box>
+            <Fade bottom delay={250}>
+              <Box sx={buttonContainer}>
+                <Button sx={viewmoreWork}> 
+                  <Link to='#projects' style={typographyViewWork}>view my work</Link>
+                </Button> 
+                <Button href='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' target='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' type='application/pdf' sx={viewmoreResume}> 
+                  {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
+                  <ButtonTypography sx={typographyViewResume}>download resume</ButtonTypography>
+                </Button> 
+              </Box>
+            </Fade>
+          </Container>
+        </Box>
+      </BrowserRouter>
     </>
   )
 }

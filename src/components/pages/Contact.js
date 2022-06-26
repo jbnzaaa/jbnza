@@ -118,16 +118,16 @@ function Contact() {
       <Box sx={boxA} id='contact'>
         <Fade bottom>
           <Container sx={container}>
-            <TypographyH4 variant='h4' sx={typographyH4}>
-              <Fade bottom delay={100}>
-                Let's create progress together.
-              </Fade>
-            </TypographyH4>
-            <TypographyP variant='body1' sx={paragraph}>
-              <Fade bottom delay={150}>
-                If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.
-              </Fade>
-            </TypographyP>
+            <Fade bottom delay={100}>
+              <TypographyH4 variant='h4' sx={typographyH4}>
+                  Let's create progress together.
+              </TypographyH4>
+            </Fade>
+            <Fade bottom delay={150}>
+              <TypographyP variant='body1' sx={paragraph}>
+                  If you have any ideas in mind, please do not hesitate to contact me. I'm always willing to help you turn your creative ideas into reality.
+              </TypographyP>
+            </Fade>
             <Fade bottom delay={200}>
             <InputField sx={boxB}>
               <ThemeProvider theme={theme}>

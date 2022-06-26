@@ -208,7 +208,7 @@ function Project() {
     width: '165px',
     height: '40px',
     borderRadius: 0,
-    marginRight: 2,
+    marginRight: '10px',
     '&:hover': {
       background: '#0F0E17',
       color: '#fcfcfc'
@@ -229,37 +229,37 @@ function Project() {
     <>
       <Container>
         <ProjectContainer sx={container} id='projects'>
-          <TypographyH4 variant='h4'sx={typographyH4}>
-            <Fade bottom delay={100}>
-              Some of the projects I've created.
-            </Fade>
-          </TypographyH4>
-          <TypographyP variant='body1'sx={paragraphA}>
-            <Fade bottom delay={150}>
-              This is a collection of projects I've worked on as a user interface designer and web developer.
-            </Fade>
-          </TypographyP>
+          <Fade bottom delay={100}>
+            <TypographyH4 variant='h4'sx={typographyH4}>
+                Some of the projects I've created.
+            </TypographyH4>
+          </Fade>
+          <Fade bottom delay={150}>
+            <TypographyP variant='body1'sx={paragraphA}>
+                This is a collection of projects I've worked on as a user interface designer and web developer.
+            </TypographyP>
+          </Fade>
           <Box sx={boxA}>
             <CardItem sx={cardA}>
               <Fade left delay={100}>
                 <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
               </Fade>
               <ProjectContent sx={cardContentA}>
-                <TypographySpan variant='body1' sx={paragraphB}>
-                  <Fade bottom delay={150}>
-                    Web Project
-                  </Fade>
-                </TypographySpan>
-                <TypographyH4 variant='h4' sx={typographyH4}>
-                  <Fade bottom delay={200}>
-                    ReGain
-                  </Fade>
-                </TypographyH4>
-                <TypographyP variant='body1' sx={TypographyC}>
-                  <Fade bottom delay={250}>
-                    A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
-                  </Fade>
-                </TypographyP>
+                <Fade bottom delay={150}>
+                  <TypographySpan variant='body1' sx={paragraphB}>
+                      Web Project
+                  </TypographySpan>
+                </Fade>
+                <Fade bottom delay={200}>
+                  <TypographyH4 variant='h4' sx={typographyH4}>
+                      ReGain
+                  </TypographyH4>
+                </Fade>
+                <Fade bottom delay={250}>
+                  <TypographyP variant='body1' sx={TypographyC}>
+                      A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
+                  </TypographyP>
+                </Fade>
                 <Fade bottom delay={300}>
                   <StackList sx={stackList}>
                     <ListItem sx={stackItem}>HTML</ListItem>

@@ -285,6 +285,46 @@ function Project() {
                 </Fade>
               </ProjectContent>
             </CardItem>
+
+            <CardItem sx={cardA}>
+              <Fade left delay={100}>
+                <ProjectMedia sx={cardMedia} src={require('../img/jbnza_mockup.png')}/>
+              </Fade>
+              <ProjectContent sx={cardContentA}>
+                <Fade bottom delay={150}>
+                  <TypographySpan variant='body1' sx={paragraphB}>
+                      Portfolio
+                  </TypographySpan>
+                </Fade>
+                <Fade bottom delay={200}>
+                  <TypographyH4 variant='h4' sx={typographyH4}>
+                      jbnza
+                  </TypographyH4>
+                </Fade>
+                <Fade bottom delay={250}>
+                  <TypographyP variant='body1' sx={TypographyC}>
+                      {/* A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches. */}
+                      A web portfolio that contains my recent developed projects and personal information summary.
+                  </TypographyP>
+                </Fade>
+                <Fade bottom delay={300}>
+                  <StackList sx={stackList}>
+                    <ListItem sx={stackItem}>ReactJS</ListItem>
+                    <ListItem sx={stackItem}>Material UI</ListItem>
+                  </StackList>
+                </Fade>
+                <Fade bottom delay={350}>
+                  <Box sx={boxB}>
+                    <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
+                    </Button>
+                    <Button href='https://jbnza.vercel.app' target='https://jbnza.vercel.app' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
+                    </Button>
+                  </Box>
+                </Fade>
+              </ProjectContent>
+            </CardItem>
           </Box>
         </ProjectContainer>
       </Container>

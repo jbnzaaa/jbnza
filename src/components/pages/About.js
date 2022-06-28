@@ -247,11 +247,11 @@ function About() {
                       <ListItem sx={listItem}>SASS</ListItem>
                       <ListItem sx={listItem}>Bootstrap</ListItem>
                       <ListItem sx={listItem}>JavaScript</ListItem>
-                      <ListItem sx={listItem}>JQuery</ListItem>
+                      {/* <ListItem sx={listItem}>JQuery</ListItem> */}
                       <ListItem sx={listItem}>ReactJS</ListItem>
                       <ListItem sx={listItem}>MySQL</ListItem>
                       <ListItem sx={listItem}>Firebase</ListItem>
-                      <ListItem sx={listItem}>NodeJS</ListItem>
+                      {/* <ListItem sx={listItem}>NodeJS</ListItem> */}
                       <ListItem sx={listItem}>NPM</ListItem>
                     </Lists>
                   </Fade>
@@ -261,7 +261,7 @@ function About() {
           </Box>
           <Box>
             <Fade bottom delay={300}>
-              <ProfileImage sx={profile} src={require('../img/profile.avif')}/>
+              <ProfileImage sx={profile} src={require('../img/BENIZA_JAYSON_1X1.jpg')}/>
             </Fade>
             {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
           </Box>

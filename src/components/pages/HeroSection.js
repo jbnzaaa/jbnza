@@ -186,7 +186,7 @@ function HeroSection() {
             <Fade bottom delay={200}>
               <TypographyP variant='body1' sx={typographyPB}>
                   {/* I'm a passionate user interface designer based in Philippines who aspires to build outstanding user interface designs that meet and surpass user expectations. */}
-                  I'm an enthusiastic user interface designer and front-end wev developer based in the Philippines. I strive to create amazing user interface designs that go above and beyond what users expect.
+                  I'm an enthusiastic user interface designer and front-end web developer based in the Philippines. I strive to create amazing user interface designs that go above and beyond what users expect.
               </TypographyP>
             </Fade>
             <Fade bottom delay={250}>

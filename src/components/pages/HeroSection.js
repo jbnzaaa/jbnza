@@ -2,10 +2,10 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 import { Container, Button, Box } from '@mui/material'
+import { VscArrowRight } from 'react-icons/vsc'
 import { Fade } from 'react-reveal'
 
 import { styled } from '@mui/material/styles'
-import { width } from '@mui/system'
 
 // const HeroContainer = styled('div')(({theme}) => ({
 //   [theme.breakpoints.down('md')]: {
@@ -108,7 +108,7 @@ function HeroSection() {
     justifyContent: 'center',
     textDecoration: 'none',
     background: '#0F0E17',
-    width: '170px',
+    width: '210px',
     height: '50px',
     borderRadius: 0,
     border: 'none',
@@ -136,14 +136,13 @@ function HeroSection() {
     alignItems: 'center',
     justifyContent: 'center',
     textDecoration: 'none',
-    background: 'none',
-    width: '170px',
+    background: '#FF8906',
+    width: '210px',
     height: '50px',
     borderRadius: 0,
-    border: '2px solid #0F0E17',
     marginLeft: '10px',
     '&:hover': {
-      background: '#FCFCFC',
+      background: '#FF8906',
       color: '#FCFCFC',
     }
   }
@@ -192,11 +191,16 @@ function HeroSection() {
             <Fade bottom delay={250}>
               <Box sx={buttonContainer}>
                 <Button sx={viewmoreWork}> 
-                  <Link to='#projects' style={typographyViewWork}>view my work</Link>
+                  <Link to='#projects' style={typographyViewWork}>
+                    view my work
+                  </Link>
+                  {/* <VscArrowRight style={{ color: '#FCFCFC', marginRight: 10, fontSize: 20, }}/> */}
                 </Button> 
                 <Button href='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' target='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' type='application/pdf' sx={viewmoreResume}> 
-                  {/* <FontAwesomeIcon icon={faArrowLeftLong} style={{marginRight: 14}}/> */}
-                  <ButtonTypography sx={typographyViewResume}>download resume</ButtonTypography>
+                  <ButtonTypography sx={typographyViewResume}>
+                    download resume
+                  </ButtonTypography>
+                  {/* <VscArrowRight style={{ color: '#0F0E17', marginRight: 10, fontSize: 20, }}/> */}
                 </Button> 
               </Box>
             </Fade>

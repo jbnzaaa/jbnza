@@ -311,6 +311,7 @@ function Project() {
                   <StackList sx={stackList}>
                     <ListItem sx={stackItem}>ReactJS</ListItem>
                     <ListItem sx={stackItem}>Material UI</ListItem>
+                    <ListItem sx={stackItem}>Figma</ListItem>
                   </StackList>
                 </Fade>
                 <Fade bottom delay={350}>

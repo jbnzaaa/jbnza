@@ -261,7 +261,7 @@ function About() {
           </Box>
           <Box>
             <Fade bottom delay={300}>
-              <ProfileImage sx={profile} src={require('../img/profile.pnupdatteg')}/>
+              <ProfileImage sx={profile} src={require('../img/profile.png')}/>
             </Fade>
             {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
           </Box>

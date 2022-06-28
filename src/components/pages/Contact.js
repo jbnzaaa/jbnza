@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Fade } from 'react-reveal';
 import { Container, Box, TextField, Button } from '@mui/material'
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
@@ -69,6 +70,11 @@ function Contact() {
     width: '70%',
   }
 
+  const test = {
+    display: 'flex', 
+    flexDirection: 'column'
+  }
+
   const container = {
     paddingY: 15,
   }
@@ -113,6 +119,31 @@ function Contact() {
     }
   }
 
+  // send email
+  const [isSending, setIsSending] = useState(true)
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('jbnza_service_id', 'template_wop76ta', form.current, '4NNmCk78_eBje_7rS')
+      .then((result) => {
+        setIsSending(false)
+        console.log(result.text)
+      })
+      // .then((setIsSending) => {
+      //   if(setIsSending == false){
+      //     setIsSending(true)
+      //   }
+      // })
+      .catch((error) => {
+        setIsSending(false)
+        console.log(error.text)
+      })
+
+      return {isSending}
+  }
+
   return (
     <>
       <Box sx={boxA} id='contact'>
@@ -129,18 +160,27 @@ function Contact() {
               </TypographyP>
             </Fade>
             <Fade bottom delay={200}>
-            <InputField sx={boxB}>
+            <InputField>
               <ThemeProvider theme={theme}>
-                <TextField label='Your Name' variant='standard'color='neutral'sx={textfeild}/>
-                <TextField label='Your Email' variant='standard'color='neutral'sx={textfeild}/>
-                <TextField label='Subject' variant='standard'color='neutral'sx={textfeild}/>
-                <TextField label='Message' variant='standard'color='neutral'sx={textfeild}/>
-                <Fade bottom delay={200}>
-                  <Button sx={sendButton}>
-                    send Message
-                    <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
-                  </Button>
-                </Fade>
+                <Box component='form' ref={form} onSubmit={sendEmail} sx={boxB}>
+                  <TextField label='Your Name' variant='standard' color='neutral' sx={textfeild} type='text' name='client_name'/>
+                  <TextField label='Your Email' variant='standard' color='neutral' sx={textfeild} type='email' name='client_email'/>
+                  <TextField label='Subject' variant='standard' color='neutral' sx={textfeild} name='subject'/>
+                  <TextField label='Message' variant='standard' color='neutral' sx={textfeild} name='message'/>
+                  <Fade bottom delay={200}>
+                    <Button sx={sendButton} type='submit'>
+                      {isSending && 'send Message'}
+                      {/* {!isSending && 'sending Message'} */}
+                      <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
+                    </Button>
+                  </Fade>
+                  {/* <Fade bottom delay={200}>
+                    {!isSending && <Button sx={sendButton} type='submit'>
+                      sending message
+                      <GrSend style={{ color: '#0F0E17', marginLeft: 14, fontSize: 18, }}/>
+                    </Button>}
+                  </Fade> */}
+                </Box>
               </ThemeProvider>
             </InputField>
             </Fade>

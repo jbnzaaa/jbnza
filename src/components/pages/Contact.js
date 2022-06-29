@@ -70,11 +70,6 @@ function Contact() {
     width: '70%',
   }
 
-  const test = {
-    display: 'flex', 
-    flexDirection: 'column'
-  }
-
   const container = {
     paddingY: 15,
   }

@@ -1,0 +1,20 @@
+{
+  "project": [
+    {
+      "id": "1",
+      "img": "../img/regain_mockup.png",
+      "description": "A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.",
+      "title": "ReGain",
+      "category": "WEB PROJECT",
+      "tech-stacks": ["HTML", "CSS", "SASS", "JavaScript", "JQuery", "Bootstrap", "NodeJS", "Firebase", "Google Cloud Storage"]
+    },
+    {
+      "id": "2",
+      "img": "../img/jbnza_mockup.png",
+      "description": "A web portfolio that contains my recent developed projects and personal information summary.",
+      "title": "jbnza",
+      "category": "PORTFOLIO",
+      "tech-stacks": ["ReactJS", "Material UI", "Figma"]
+    }
+  ]
+}

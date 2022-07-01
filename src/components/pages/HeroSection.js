@@ -108,7 +108,7 @@ function HeroSection() {
     justifyContent: 'center',
     textDecoration: 'none',
     background: '#0F0E17',
-    width: '210px',
+    width: '180px',
     height: '50px',
     borderRadius: 0,
     border: 'none',
@@ -137,7 +137,7 @@ function HeroSection() {
     justifyContent: 'center',
     textDecoration: 'none',
     background: '#FF8906',
-    width: '210px',
+    width: '180px',
     height: '50px',
     borderRadius: 0,
     marginLeft: '10px',
@@ -185,7 +185,7 @@ function HeroSection() {
             <Fade bottom delay={200}>
               <TypographyP variant='body1' sx={typographyPB}>
                   {/* I'm a passionate user interface designer based in Philippines who aspires to build outstanding user interface designs that meet and surpass user expectations. */}
-                  I'm an enthusiastic user interface designer and front-end web developer based in the Philippines. I strive to create amazing user interface designs that go above and beyond what users expect.
+                  I'm an enthusiastic user interface designer and front-end web developer. I strive to create amazing user interface designs that go above and beyond what users expect.
               </TypographyP>
             </Fade>
             <Fade bottom delay={250}>

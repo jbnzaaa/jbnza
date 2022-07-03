@@ -37,11 +37,11 @@ const TypographyP = styled('p')(({theme}) => ({
 const InputField = styled('div')(({theme}) => ({
   [theme.breakpoints.down('md')]: {
     width: '100%',
-    paddingTop: '40px'
+    paddingTop: '40px',
   },
   [theme.breakpoints.up('lg')]: {
     width: '70%',
-    paddingTop: '64px'
+    paddingTop: '64px',
   },
 }))
 
@@ -67,7 +67,7 @@ function Contact() {
   const boxB = {
     display: 'flex',
     flexDirection: 'column',
-    width: '70%',
+    width: '100%',
   }
 
   const container = {

@@ -326,6 +326,7 @@ function Project() {
                 </Fade>
               </ProjectContent>
             </CardItem>
+
           </Box>
         </ProjectContainer>
       </Container>

@@ -229,7 +229,7 @@ function About() {
                     <Lists sx={boxC} >
                       <ListItem sx={listItem}>Adobe Photoshop</ListItem>
                       <ListItem sx={listItem}>Adobe Illustrator</ListItem>
-                      <ListItem sx={listItem}>Adobe Xd</ListItem>
+                      {/* <ListItem sx={listItem}>Adobe Xd</ListItem> */}
                       <ListItem sx={listItem}>Figma</ListItem>
                     </Lists>
                   </Fade>
@@ -249,7 +249,7 @@ function About() {
                       <ListItem sx={listItem}>JavaScript</ListItem>
                       {/* <ListItem sx={listItem}>JQuery</ListItem> */}
                       <ListItem sx={listItem}>ReactJS</ListItem>
-                      <ListItem sx={listItem}>MySQL</ListItem>
+                      {/* <ListItem sx={listItem}>MySQL</ListItem> */}
                       <ListItem sx={listItem}>Firebase</ListItem>
                       {/* <ListItem sx={listItem}>NodeJS</ListItem> */}
                       <ListItem sx={listItem}>NPM</ListItem>

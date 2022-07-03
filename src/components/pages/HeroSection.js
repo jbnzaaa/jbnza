@@ -115,7 +115,7 @@ function HeroSection() {
     '&:hover': {
       background: '#0F0E17',
       color: '#FCFCFC',
-    }
+    },
   }
 
   const typographyViewWork = {
@@ -194,9 +194,8 @@ function HeroSection() {
                   <Link to='#projects' style={typographyViewWork}>
                     view my work
                   </Link>
-                  {/* <VscArrowRight style={{ color: '#FCFCFC', marginRight: 10, fontSize: 20, }}/> */}
                 </Button> 
-                <Button href='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' target='https://drive.google.com/file/d/1YpDRyiZXNb6Wmi4S1WlGx5_osaKKdjyQ/view?usp=sharing' type='application/pdf' sx={viewmoreResume}> 
+                <Button href='https://drive.google.com/file/d/10UWUFy6eFIBb1Z_IHCQmv82JrZ5RIvk3/view?usp=sharing' target='https://drive.google.com/file/d/10UWUFy6eFIBb1Z_IHCQmv82JrZ5RIvk3/view?usp=sharing' type='application/pdf' sx={viewmoreResume}> 
                   <ButtonTypography sx={typographyViewResume}>
                     download resume
                   </ButtonTypography>

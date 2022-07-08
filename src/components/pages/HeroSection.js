@@ -179,13 +179,15 @@ function HeroSection() {
             </Fade>
             <Fade bottom delay={150}>
               <TypographyH1 variant='h1' sx={typographyH1B}>
-                  I do web design & development.
+                  I do user interface design.
+                  {/* I do web design & development. */}
               </TypographyH1>
             </Fade>
             <Fade bottom delay={200}>
               <TypographyP variant='body1' sx={typographyPB}>
                   {/* I'm a passionate user interface designer based in Philippines who aspires to build outstanding user interface designs that meet and surpass user expectations. */}
-                  I'm an enthusiastic user interface designer and front-end web developer. I strive to create amazing user interface designs that go above and beyond what users expect.
+                  {/* I'm an enthusiastic user interface designer and front-end web developer. I strive to create amazing user interface designs that go above and beyond what users expect. */}
+                  I'm an enthusiastic user interface designer. I strive to create amazing user interface designs that go above and beyond what users expect.
               </TypographyP>
             </Fade>
             <Fade bottom delay={250}>

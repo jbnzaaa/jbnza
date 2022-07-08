@@ -194,14 +194,15 @@ function About() {
                 <ListItem sx={aboutmeListA} >
                   <Fade bottom delay={150}>
                     <TypographyP variant='body1' sx={typographyPA} >
-                        Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                        Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing. Expecting to graduate this coming August 2022 in STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                        {/* Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/> */}
                     </TypographyP>
                   </Fade>
                 </ListItem>
                 <ListItem sx={aboutmeListB} >
                   <Fade bottom delay={200}>
                     <TypographyP variant='body1' sx={typographyPA} >
-                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design developed. I spent the most of my time studying visual design and now capable of creating professional and interactive web designs.
+                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design also developed. I started to spent the most of my time studying visual design and now capable of creating interactive web designs.
                     </TypographyP>
                   </Fade>
                 </ListItem>
@@ -242,15 +243,16 @@ function About() {
                   </Fade>
                   <Fade bottom delay={350}>
                     <Lists sx={boxD}>
-                      <ListItem sx={listItem}>HTML 5</ListItem>
-                      <ListItem sx={listItem}>CSS 3</ListItem>
+                      <ListItem sx={listItem}>HTML</ListItem>
+                      <ListItem sx={listItem}>CSS</ListItem>
                       <ListItem sx={listItem}>SASS</ListItem>
                       <ListItem sx={listItem}>Bootstrap</ListItem>
+                      <ListItem sx={listItem}>Tailwind CSS</ListItem>
                       <ListItem sx={listItem}>JavaScript</ListItem>
                       {/* <ListItem sx={listItem}>JQuery</ListItem> */}
                       <ListItem sx={listItem}>ReactJS</ListItem>
                       {/* <ListItem sx={listItem}>MySQL</ListItem> */}
-                      <ListItem sx={listItem}>Firebase</ListItem>
+                      {/* <ListItem sx={listItem}>Firebase</ListItem> */}
                       {/* <ListItem sx={listItem}>NodeJS</ListItem> */}
                       <ListItem sx={listItem}>NPM</ListItem>
                     </Lists>

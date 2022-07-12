@@ -236,7 +236,8 @@ function Project() {
           </Fade>
           <Fade bottom delay={150}>
             <TypographyP variant='body1'sx={paragraphA}>
-                This is a collection of projects I've worked on as a user interface designer and web developer.
+                {/* This is a collection of projects I've worked on as a user interface designer and web developer. */}
+                This is a collection of projects I've worked on throughout my journey as user interface designer and web developer.
             </TypographyP>
           </Fade>
           <Box sx={boxA}>

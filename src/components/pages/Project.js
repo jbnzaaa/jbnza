@@ -293,7 +293,7 @@ function Project() {
               <ProjectContent sx={cardContentA}>
                 <Fade bottom delay={150}>
                   <TypographySpan variant='body1' sx={paragraphB}>
-                      Portfolio
+                      Personal Project
                   </TypographySpan>
                 </Fade>
                 <Fade bottom delay={200}>
@@ -311,6 +311,7 @@ function Project() {
                   <StackList sx={stackList}>
                     <ListItem sx={stackItem}>ReactJS</ListItem>
                     <ListItem sx={stackItem}>Material UI</ListItem>
+                    <ListItem sx={stackItem}>Vercel</ListItem>
                     <ListItem sx={stackItem}>Figma</ListItem>
                   </StackList>
                 </Fade>

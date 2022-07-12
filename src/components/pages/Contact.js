@@ -158,10 +158,10 @@ function Contact() {
             <InputField>
               <ThemeProvider theme={theme}>
                 <Box component='form' ref={form} onSubmit={sendEmail} sx={boxB}>
-                  <TextField label='Your Name' variant='standard' color='neutral' sx={textfeild} type='text' name='client_name'/>
-                  <TextField label='Your Email' variant='standard' color='neutral' sx={textfeild} type='email' name='client_email'/>
-                  <TextField label='Subject' variant='standard' color='neutral' sx={textfeild} name='subject'/>
-                  <TextField label='Message' variant='standard' color='neutral' sx={textfeild} name='message'/>
+                  <TextField label='Your Name' variant='standard' color='neutral' sx={textfeild} type='text' name='client_name' required/>
+                  <TextField label='Your Email' variant='standard' color='neutral' sx={textfeild} type='email' name='client_email' required/>
+                  <TextField label='Subject' variant='standard' color='neutral' sx={textfeild} name='subject' required/>
+                  <TextField label='Message' variant='standard' color='neutral' sx={textfeild} name='message' required/>
                   <Fade bottom delay={200}>
                     <Button sx={sendButton} type='submit'>
                       {isSending && 'send Message'}

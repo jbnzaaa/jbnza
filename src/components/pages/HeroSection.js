@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 import { Container, Button, Box } from '@mui/material'
-import { VscArrowRight } from 'react-icons/vsc'
 import { Fade } from 'react-reveal'
 
 import { styled } from '@mui/material/styles'
@@ -187,7 +186,7 @@ function HeroSection() {
               <TypographyP variant='body1' sx={typographyPB}>
                   {/* I'm a passionate user interface designer based in Philippines who aspires to build outstanding user interface designs that meet and surpass user expectations. */}
                   {/* I'm an enthusiastic user interface designer and front-end web developer. I strive to create amazing user interface designs that go above and beyond what users expect. */}
-                  I'm an enthusiastic user interface designer. I strive to create amazing user interface designs that go above and beyond what users expect.
+                  I'm an enthusiastic user interface designer striving to create amazing user interface designs that go above and beyond what users expect.
               </TypographyP>
             </Fade>
             <Fade bottom delay={250}>

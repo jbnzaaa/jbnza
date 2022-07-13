@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-reveal';
-import { Container, Box, Typography, List, ListItem } from '@mui/material'
+import { Container, Box, List, ListItem } from '@mui/material'
 
 import { styled } from '@mui/material/styles'
 

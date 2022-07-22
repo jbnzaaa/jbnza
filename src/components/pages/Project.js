@@ -243,7 +243,7 @@ function Project() {
           <Box sx={boxA}>
             <CardItem sx={cardA}>
               <Fade left delay={100}>
-                <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.jpg')}/>
+                <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.png')}/>
               </Fade>
               <ProjectContent sx={cardContentA}>
                 <Fade bottom delay={150}>

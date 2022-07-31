@@ -258,7 +258,7 @@ function Project() {
                 </Fade>
                 <Fade bottom delay={250}>
                   <TypographyP variant='body1' sx={TypographyC}>
-                      A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
+                      A web-based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches.
                   </TypographyP>
                 </Fade>
                 <Fade bottom delay={300}>
@@ -331,39 +331,39 @@ function Project() {
 
             <CardItem sx={cardA}>
               <Fade left delay={100}>
-                <ProjectMedia sx={cardMedia} src={require('../img/jbnza_mockup.png')}/>
+                <ProjectMedia sx={cardMedia} src={require('../img/daily_discount_mockup.png')}/>
               </Fade>
               <ProjectContent sx={cardContentA}>
                 <Fade bottom delay={150}>
                   <TypographySpan variant='body1' sx={paragraphB}>
-                      Personal Project
+                      Ongoing Team Project
                   </TypographySpan>
                 </Fade>
                 <Fade bottom delay={200}>
                   <TypographyH4 variant='h4' sx={typographyH4}>
-                      jbnza
+                      Daily Discount
                   </TypographyH4>
                 </Fade>
                 <Fade bottom delay={250}>
                   <TypographyP variant='body1' sx={TypographyC}>
-                      {/* A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches. */}
-                      A web portfolio that contains my recent developed projects and personal information summary.
+                      A web-based application that offers discounted mobile game credits.
                   </TypographyP>
                 </Fade>
                 <Fade bottom delay={300}>
                   <StackList sx={stackList}>
                     <ListItem sx={stackItem}>ReactJS</ListItem>
-                    <ListItem sx={stackItem}>Material UI</ListItem>
+                    <ListItem sx={stackItem}>Tailwind CSS</ListItem>
+                    <ListItem sx={stackItem}>Node JS</ListItem>
                     <ListItem sx={stackItem}>Vercel</ListItem>
                     <ListItem sx={stackItem}>Figma</ListItem>
                   </StackList>
                 </Fade>
                 <Fade bottom delay={350}>
                   <Box sx={boxB}>
-                    <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
-                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
-                    </Button>
-                    <Button href='https://jbnza.vercel.app' target='https://jbnza.vercel.app' variant='contained' sx={linkButton}>
+                    {/* <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography> 
+                    </Button> */}
+                    <Button href='https://daily-discount.vercel.app/' target='https://daily-discount.vercel.app/' variant='contained' sx={linkButton}>
                       <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
                     </Button>
                   </Box>

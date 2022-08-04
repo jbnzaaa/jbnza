@@ -1,0 +1,8 @@
+// add updates in github repository
+git add .
+
+// add commit message
+git commit -m 'message'
+
+// push git repository
+git push -u origin master

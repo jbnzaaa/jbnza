@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 import { Container, Button, Box } from '@mui/material'
 import { Fade } from 'react-reveal'
+import Resume from '../files/Beniza_Jayson_B_UI_Designer.pdf'
 
 import { styled } from '@mui/material/styles'
 
@@ -196,7 +197,7 @@ function HeroSection() {
                     view my work
                   </Link>
                 </Button> 
-                <Button href='https://drive.google.com/file/d/10UWUFy6eFIBb1Z_IHCQmv82JrZ5RIvk3/view?usp=sharing' target='https://drive.google.com/file/d/10UWUFy6eFIBb1Z_IHCQmv82JrZ5RIvk3/view?usp=sharing' type='application/pdf' sx={viewmoreResume}> 
+                <Button href={Resume} target='_blank' rel='noreferrer' sx={viewmoreResume}> 
                   <ButtonTypography sx={typographyViewResume}>
                     download resume
                   </ButtonTypography>

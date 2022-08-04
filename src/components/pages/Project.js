@@ -109,12 +109,14 @@ function Project() {
     fontSize: 35,
     fontFamily: 'Poppins',
     fontWeight: 700,
-    mb: 2
+    mb: 2,
+    color: '#0F0E17',
   }
 
   const paragraphA = {
     fontSize: 14,
-    fontFamily: 'Poppins'
+    fontFamily: 'Poppins',
+    color: '#0F0E17',
   }
 
   const paragraphB = {
@@ -125,13 +127,22 @@ function Project() {
     textTransform: 'uppercase' 
   }
 
+  const paragraphC = {
+    fontSize: 12, 
+    fontFamily: 'Poppins ', 
+    pb: 1/5, 
+    color: '#0F0E17', 
+    textTransform: 'uppercase' 
+  }
+
   const TypographyC = {
     fontSize: 14, 
     fontFamily: 'Poppins', 
     width: '80%', 
     flexWrap: 'wrap', 
     pb: 3,
-    lineHeight: 2
+    lineHeight: 2,
+    color: '#0F0E17', 
   }
 
   const boxA = {
@@ -215,6 +226,21 @@ function Project() {
     }
   }
 
+  const linkButtons = {
+    border: 'none',
+    background: '#0F0E17',
+    width: '190px',
+    height: '40px',
+    borderRadius: 0,
+    marginRight: '10px',
+    marginTop: '10px',
+    // float: 'right',
+    '&:hover': {
+      background: '#0F0E17',
+      color: '#fcfcfc'
+    }
+  }
+
   const typographyButton = {
     color: '#FCFCFC',
     textTransform: 'lowercase',
@@ -237,10 +263,96 @@ function Project() {
           <Fade bottom delay={150}>
             <TypographyP variant='body1'sx={paragraphA}>
                 {/* This is a collection of projects I've worked on as a user interface designer and web developer. */}
-                This is a collection of projects I've worked on throughout my journey as user interface designer and web developer.
+                This is a collection of projects I've worked on throughout my journey as user interface designer and front-end web developer.
             </TypographyP>
           </Fade>
           <Box sx={boxA}>
+            {/* Daily Discount */}
+            <CardItem sx={cardA}>
+              <Fade left delay={100}>
+                <ProjectMedia sx={cardMedia} src={require('../img/daily_discount_mockup.png')}/>
+              </Fade>
+              <ProjectContent sx={cardContentA}>
+                <Fade bottom delay={150}>
+                  <TypographySpan variant='body1' sx={paragraphB}>
+                    Team {'>'} Ongoing Web Project
+                  </TypographySpan>
+                </Fade>
+                <Fade bottom delay={200}>
+                  <TypographyH4 variant='h4' sx={typographyH4}>
+                      Daily Discount
+                  </TypographyH4>
+                </Fade>
+                <Fade bottom delay={250}>
+                  <TypographyP variant='body1' sx={TypographyC}>
+                      A web-based application that offers online-transactions for discounted mobile game credits.
+                  </TypographyP>
+                </Fade>
+                <Fade bottom delay={300}>
+                  <StackList sx={stackList}>
+                    <ListItem sx={stackItem}>ReactJS</ListItem>
+                    <ListItem sx={stackItem}>Tailwind CSS</ListItem>
+                    <ListItem sx={stackItem}>Node JS</ListItem>
+                    <ListItem sx={stackItem}>Vercel</ListItem>
+                    <ListItem sx={stackItem}>Figma</ListItem>
+                  </StackList>
+                </Fade>
+                <Fade bottom delay={350}>
+                  <Box sx={boxB}>
+                    {/* <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography> 
+                    </Button> */}
+                    <Button href='https://daily-discount.vercel.app/' target='https://daily-discount.vercel.app/' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
+                    </Button>
+                  </Box>
+                </Fade>
+              </ProjectContent>
+            </CardItem>
+            {/* JBNZA */}
+            <CardItem sx={cardA}>
+              <Fade left delay={100}>
+                <ProjectMedia sx={cardMedia} src={require('../img/jbnza_mockup.png')}/>
+              </Fade>
+              <ProjectContent sx={cardContentA}>
+                <Fade bottom delay={150}>
+                  <TypographySpan variant='body1' sx={paragraphB}>
+                      {/* Personal Project */}
+                      Personal {'>'} Web Project
+                  </TypographySpan>
+                </Fade>
+                <Fade bottom delay={200}>
+                  <TypographyH4 variant='h4' sx={typographyH4}>
+                      jbnza
+                  </TypographyH4>
+                </Fade>
+                <Fade bottom delay={250}>
+                  <TypographyP variant='body1' sx={TypographyC}>
+                      {/* A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches. */}
+                      A web portfolio that contains my recent developed projects and personal information summary.
+                  </TypographyP>
+                </Fade>
+                <Fade bottom delay={300}>
+                  <StackList sx={stackList}>
+                    <ListItem sx={stackItem}>ReactJS</ListItem>
+                    <ListItem sx={stackItem}>Material UI</ListItem>
+                    <ListItem sx={stackItem}>Vercel</ListItem>
+                    <ListItem sx={stackItem}>Figma</ListItem>
+                  </StackList>
+                </Fade>
+                <Fade bottom delay={350}>
+                  <Box sx={boxB}>
+                    {/* <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
+                    </Button> */}
+                    <Button href='https://jbnza.vercel.app' target='https://jbnza.vercel.app' variant='contained' sx={linkButton}>
+                      <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
+                    </Button>
+                  </Box>
+                </Fade>
+              </ProjectContent>
+            </CardItem>
+            {/* ReGain */}
             <CardItem sx={cardA}>
               <Fade left delay={100}>
                 <ProjectMedia sx={cardMedia} src={require('../img/regain_mockup.png')}/>
@@ -248,7 +360,7 @@ function Project() {
               <ProjectContent sx={cardContentA}>
                 <Fade bottom delay={150}>
                   <TypographySpan variant='body1' sx={paragraphB}>
-                      Web Project
+                    Team {'>'} Web Project
                   </TypographySpan>
                 </Fade>
                 <Fade bottom delay={200}>
@@ -276,9 +388,9 @@ function Project() {
                 </Fade>
                 <Fade bottom delay={350}>
                   <Box sx={boxB}>
-                    <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>
+                    {/* <Button href='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' target='https://www.behance.net/gallery/144867729/ReGain-UI-Redesign' variant='contained' sx={linkButton}>
                       <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
-                    </Button>
+                    </Button> */}
                     <Button href='https://regain-caps.web.app' target='https://regain-caps.web.app' variant='contained' sx={linkButton}>
                       <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
                     </Button>
@@ -286,92 +398,16 @@ function Project() {
                 </Fade>
               </ProjectContent>
             </CardItem>
-
-            <CardItem sx={cardA}>
-              <Fade left delay={100}>
-                <ProjectMedia sx={cardMedia} src={require('../img/jbnza_mockup.png')}/>
-              </Fade>
-              <ProjectContent sx={cardContentA}>
-                <Fade bottom delay={150}>
-                  <TypographySpan variant='body1' sx={paragraphB}>
-                      Personal Project
-                  </TypographySpan>
-                </Fade>
-                <Fade bottom delay={200}>
-                  <TypographyH4 variant='h4' sx={typographyH4}>
-                      jbnza
-                  </TypographyH4>
-                </Fade>
-                <Fade bottom delay={250}>
-                  <TypographyP variant='body1' sx={TypographyC}>
-                      {/* A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches. */}
-                      A web portfolio that contains my recent developed projects and personal information summary.
-                  </TypographyP>
-                </Fade>
-                <Fade bottom delay={300}>
-                  <StackList sx={stackList}>
-                    <ListItem sx={stackItem}>ReactJS</ListItem>
-                    <ListItem sx={stackItem}>Material UI</ListItem>
-                    <ListItem sx={stackItem}>Vercel</ListItem>
-                    <ListItem sx={stackItem}>Figma</ListItem>
-                  </StackList>
-                </Fade>
-                <Fade bottom delay={350}>
-                  <Box sx={boxB}>
-                    <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
-                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography>
-                    </Button>
-                    <Button href='https://jbnza.vercel.app' target='https://jbnza.vercel.app' variant='contained' sx={linkButton}>
-                      <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
-                    </Button>
-                  </Box>
-                </Fade>
-              </ProjectContent>
-            </CardItem>
-
-            <CardItem sx={cardA}>
-              <Fade left delay={100}>
-                <ProjectMedia sx={cardMedia} src={require('../img/daily_discount_mockup.png')}/>
-              </Fade>
-              <ProjectContent sx={cardContentA}>
-                <Fade bottom delay={150}>
-                  <TypographySpan variant='body1' sx={paragraphB}>
-                      Ongoing Team Project
-                  </TypographySpan>
-                </Fade>
-                <Fade bottom delay={200}>
-                  <TypographyH4 variant='h4' sx={typographyH4}>
-                      Daily Discount
-                  </TypographyH4>
-                </Fade>
-                <Fade bottom delay={250}>
-                  <TypographyP variant='body1' sx={TypographyC}>
-                      A web-based application that offers discounted mobile game credits.
-                  </TypographyP>
-                </Fade>
-                <Fade bottom delay={300}>
-                  <StackList sx={stackList}>
-                    <ListItem sx={stackItem}>ReactJS</ListItem>
-                    <ListItem sx={stackItem}>Tailwind CSS</ListItem>
-                    <ListItem sx={stackItem}>Node JS</ListItem>
-                    <ListItem sx={stackItem}>Vercel</ListItem>
-                    <ListItem sx={stackItem}>Figma</ListItem>
-                  </StackList>
-                </Fade>
-                <Fade bottom delay={350}>
-                  <Box sx={boxB}>
-                    {/* <Button href='https://www.behance.net/gallery/146698815/Portfolio' target='https://www.behance.net/gallery/146698815/Portfolio' variant='contained' sx={linkButton}>
-                      <ButtonTypography sx={typographyButton}>view in behance</ButtonTypography> 
-                    </Button> */}
-                    <Button href='https://daily-discount.vercel.app/' target='https://daily-discount.vercel.app/' variant='contained' sx={linkButton}>
-                      <ButtonTypography sx={typographyButton}>launch app</ButtonTypography>
-                    </Button>
-                  </Box>
-                </Fade>
-              </ProjectContent>
-            </CardItem>
-
           </Box>
+          {/* View all ui projects */}
+          <Fade bottom delay={150}>
+            <TypographySpan variant='body1' sx={paragraphC}>
+              Take a look at my UI designs
+            </TypographySpan>
+            <Button href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' variant='contained' sx={linkButtons}>
+              <ButtonTypography sx={typographyButton}>view all projects</ButtonTypography> 
+            </Button>
+          </Fade>
         </ProjectContainer>
       </Container>
     </>

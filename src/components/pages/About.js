@@ -140,11 +140,11 @@ function About() {
 
   const aboutmeListA = {
     p: 0,
-    mb: 2
+    mb: 2,
   }
 
   const aboutmeListB = {
-    p: 0
+    p: 0,
   }
 
   const whatIuse = {
@@ -194,15 +194,20 @@ function About() {
                 <ListItem sx={aboutmeListA} >
                   <Fade bottom delay={150}>
                     <TypographyP variant='body1' sx={typographyPA} >
-                        Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing. Expecting to graduate this coming August 2022 in STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
-                        {/* Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing and front-end web development. I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/> */}
+                        Hi! I'm Jayson Beniza, an enthusiastic self-taught user interface designer from Quezon City Philippines.
+                        I am a fresh graduate at STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                        {/* Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing and front-end web development. 
+                        I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/> I have strong passion for user interface designing. */}
                     </TypographyP>
                   </Fade>
                 </ListItem>
                 <ListItem sx={aboutmeListB} >
                   <Fade bottom delay={200}>
                     <TypographyP variant='body1' sx={typographyPA} >
-                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. That experience started to shape my skills and knowledge particularly in front-end web development. As I learned more about web programming, my interest in UI design also developed. I started to spent the most of my time studying visual design and now capable of creating interactive web designs.
+                        My interest in web programming began in senior high school, when I was appointed to be the project's lead programmer. 
+                        That experience started to shape my skills and knowledge specially in front-end web development. And as I learned more 
+                        about web programming, my interest in UI design also developed. I started to spent the most of my time studying, 
+                        enhancing and creating user interface designs and now capable of creating interactive web designs.
                     </TypographyP>
                   </Fade>
                 </ListItem>
@@ -263,7 +268,7 @@ function About() {
           </Box>
           <Box>
             <Fade bottom delay={300}>
-              <ProfileImage sx={profile} src={require('../img/profile.png')}/>
+              <ProfileImage sx={profile} src={require('../img/profile.JPG')}/>
             </Fade>
             {/* <img src={require('https://images.unsplash.com/photo-1607970420862-385a245239a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')} alt='Profile' style={profile}/> */}
           </Box>

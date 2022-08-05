@@ -132,7 +132,7 @@ function Project() {
     fontFamily: 'Poppins ', 
     pb: 1/5, 
     color: '#0F0E17', 
-    textTransform: 'uppercase' 
+    textTransform: 'uppercase',
   }
 
   const TypographyC = {
@@ -232,7 +232,6 @@ function Project() {
     width: '190px',
     height: '40px',
     borderRadius: 0,
-    marginRight: '10px',
     marginTop: '10px',
     // float: 'right',
     '&:hover': {
@@ -249,6 +248,25 @@ function Project() {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
+  }
+
+  const typographyButtons = {
+    color: '#0F0E17',
+    textTransform: 'lowercase',
+    fontSize: 14, 
+    fontWeight: '600',
+    fontFamily: 'Poppins',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+  
+  const viewMoreProject = {
+    display: 'flex',
+    flexDirection: 'column',
+    // alignItems: 'center',
+    // textAlign: 'center',
+    mt: 12
   }
 
   return (
@@ -292,7 +310,7 @@ function Project() {
                   <StackList sx={stackList}>
                     <ListItem sx={stackItem}>ReactJS</ListItem>
                     <ListItem sx={stackItem}>Tailwind CSS</ListItem>
-                    <ListItem sx={stackItem}>Node JS</ListItem>
+                    {/* <ListItem sx={stackItem}>Node JS</ListItem> */}
                     <ListItem sx={stackItem}>Vercel</ListItem>
                     <ListItem sx={stackItem}>Figma</ListItem>
                   </StackList>
@@ -328,8 +346,8 @@ function Project() {
                 </Fade>
                 <Fade bottom delay={250}>
                   <TypographyP variant='body1' sx={TypographyC}>
-                      {/* A web based self-assessment and e-journal system with chatbot and student counselor assistance for troubled student in STI College Novaliches. */}
-                      A web portfolio that contains my recent developed projects and personal information summary.
+                      {/* A web-based portfolio that contains my recent developed projects and personal information summary. */}
+                      A web-based portfolio that showcases my most current projects as well as an overview of my personal information.
                   </TypographyP>
                 </Fade>
                 <Fade bottom delay={300}>
@@ -382,7 +400,8 @@ function Project() {
                     <ListItem sx={stackItem}>JQuery</ListItem>
                     <ListItem sx={stackItem}>Bootstrap</ListItem>
                     <ListItem sx={stackItem}>NodeJS</ListItem>
-                    <ListItem sx={stackItem}>Firebase</ListItem>
+                    <ListItem sx={stackItem}>Cloud Firestore</ListItem>
+                    <ListItem sx={stackItem}>Firebase Admin</ListItem>
                     <ListItem sx={stackItem}>Google Cloud Storage</ListItem>
                   </StackList>
                 </Fade>
@@ -401,12 +420,14 @@ function Project() {
           </Box>
           {/* View all ui projects */}
           <Fade bottom delay={150}>
-            <TypographySpan variant='body1' sx={paragraphC}>
-              Take a look at my UI designs
-            </TypographySpan>
-            <Button href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' variant='contained' sx={linkButtons}>
-              <ButtonTypography sx={typographyButton}>view all projects</ButtonTypography> 
-            </Button>
+            <Box sx={viewMoreProject}>
+              <TypographySpan variant='body1' sx={paragraphC}>
+                Take a look at my UI designs
+              </TypographySpan>
+              <Button href='https://www.behance.net/jbnza' target='https://www.behance.net/jbnza' variant='contained' sx={linkButtons}>
+                <ButtonTypography sx={typographyButton}>view all projects</ButtonTypography> 
+              </Button>
+            </Box>
           </Fade>
         </ProjectContainer>
       </Container>

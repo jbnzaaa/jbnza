@@ -195,7 +195,7 @@ function About() {
                   <Fade bottom delay={150}>
                     <TypographyP variant='body1' sx={typographyPA} >
                         Hi! I'm Jayson Beniza, an enthusiastic self-taught user interface designer from Quezon City Philippines.
-                        I am a fresh graduate at STI College Novaliches with a bachelor’s degree in Information Technology. <br/>
+                        I am a fresh graduate at STI College Novaliches with a bachelor's degree in Information Technology. <br/>
                         {/* Hi! I’m Jayson Beniza from Philippines, I have strong passion for user interface designing and front-end web development. 
                         I recently graduated from STI College Novaliches with a bachelor’s degree in Information Technology. <br/> I have strong passion for user interface designing. */}
                     </TypographyP>
